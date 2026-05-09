@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Diventa un Partner Teiker. Personalizza la piattaforma in modalità white-label, crea assistenti AI personalizzati, sviluppa plugin ed espandi la tua attività con la piattaforma leader per companion AI.">
+    <title>Partner – Crea, Personalizza ed Espandi con Teiker | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/it/partner.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/partners.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/partners.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/partners.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/parceiros.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/partenaires.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/partner.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/partner.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/partnery.html">
+
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <style>
+        /* ============================================
+           PARTNERS PAGE — Specific Styles
+           ============================================ */
+
+        /* Hero gradient for partners */
+        .partners-hero {
+            background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 35%, #7c3aed 70%, #a78bfa 100%) !important;
+        }
+
+        /* Advantage cards with numbered badges */
+        .advantage-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            font-family: var(--font-display);
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
+            flex-shrink: 0;
+            transition: transform var(--transition-bounce);
+        }
+
+        .advantage-item:hover .advantage-number {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .advantage-item {
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: start;
+            padding: var(--spacing-xl);
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-glass);
+            transition: all var(--transition-slow);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advantage-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glass-hover);
+        }
+
+        .advantage-item:hover::before {
+            opacity: 1;
+        }
+
+        /* White-label customization pills */
+        .custom-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--color-primary-50);
+            border: 1px solid var(--color-primary-200);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            color: var(--color-primary-800);
+            font-size: 0.95rem;
+            transition: all var(--transition-base);
+        }
+
+        .custom-pill:hover {
+            background: var(--color-primary-100);
+            border-color: var(--color-primary-400);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .custom-pills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: var(--spacing-lg);
+        }
+
+        /* White-label mockup card */
+        .wl-mockup {
+            background: linear-gradient(135deg, #1e1b4b, #312e81);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wl-mockup::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            pointer-events: none;
+        }
+
+        .wl-mockup-row {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .wl-mockup-row:last-child {
+            border-bottom: none;
+        }
+
+        .wl-mockup-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Assistant type cards */
+        .assistant-card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-glass);
+            transition: all var(--transition-slow);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .assistant-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .assistant-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-glass-hover);
+        }
+
+        .assistant-card:hover::after {
+            opacity: 1;
+        }
+
+        .assistant-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+            transition: transform var(--transition-bounce);
+        }
+
+        .assistant-card:hover .assistant-icon {
+            transform: scale(1.2) rotate(-8deg);
+        }
+
+        /* Plugin marketplace visual */
+        .plugin-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+            margin: var(--spacing-xl) 0;
+        }
+
+        .plugin-flow-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: var(--spacing-md);
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            min-width: 140px;
+            transition: all var(--transition-base);
+        }
+
+        .plugin-flow-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .plugin-flow-arrow {
+            font-size: 1.5rem;
+            color: var(--color-primary-500);
+            font-weight: 700;
+        }
+
+        /* Partner contact form */
+        .partner-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+
+        .partner-form-grid .form-full {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 640px) {
+            .partner-form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Stat highlight box */
+        .stat-highlight {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .stat-highlight .stat-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-highlight .stat-label {
+            font-size: 0.95rem;
+            color: var(--color-gray-600);
+            font-weight: 500;
+        }
+
+        /* Glowing badge */
+        .partner-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: var(--radius-full);
+            color: var(--color-primary-700);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Image placeholder styling for partner page */
+        .partner-visual {
+            background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100));
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-visual::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            bottom: -50px;
+            left: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="accompagnamento.html" class="nav-link">Accompagnamento</a></li>
+                    <li><a href="gestione-salute.html" class="nav-link">Gestione della Salute</a></li>
+                    <li><a href="emergenze.html" class="nav-link">Emergenze</a></li>
+                    <li><a href="sicurezza.html" class="nav-link">Sicurezza</a></li>
+                    <li><a href="partner.html" class="nav-link" >Partner</a></li>
+                    <li><a href="#partner-contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Diventa un Partner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero partners-hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <div class="partner-badge" style="color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25);">
+                    🤝 Programma Partner
+                </div>
+                <h1>Crea, Personalizza ed Espandi<br>con Teiker</h1>
+                <p style="max-width: 850px; margin-left: auto; margin-right: auto;">
+                    Unisciti al Programma Partner Teiker e scopri un mondo di opportunità. Offri la piattaforma in white-label, crea assistenti IA personalizzati e sviluppa plugin con la tecnologia più avanzata.
+                </p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🏷️ White Label</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Il tuo brand, la nostra tecnologia</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🤖 Assistenti AI</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Progettati per ogni settore</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🧩 Marketplace dei Plugin</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Sviluppa, pubblica e monetizza</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#advantages" class="btn btn-primary">Esplora i Vantaggi</a>
+                    <a href="#partner-contact" class="btn btn-outline">Candidati Ora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: ADVANTAGES OF BEING A PARTNER -->
+    <section class="section" id="advantages" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Perché Diventare un Partner Teiker?</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Unisciti a un ecosistema di innovatori in crescita. Dai ricavi ricorrenti a strumenti IA all'avanguardia, scopri perché le aziende scelgono Teiker.
+            </p>
+
+            <div style="display: grid; gap: var(--spacing-lg); max-width: 900px; margin: 0 auto;">
+                <div class="advantage-item">
+                    <div class="advantage-number">1</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Modello di Ricavi Ricorrenti</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Guadagna commissioni ricorrenti su ogni abbonamento attivo. Costruisci un flusso di entrate sostenibile che cresce insieme alla tua base di clienti.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-number">2</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Piattaforma White-Label Completa</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Personalizza l'intera piattaforma Teiker con la tua identità — logo, URL, colori, skin e molto altro. I tuoi clienti vedranno solo il tuo brand.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-number">3</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Innovazione Basata sull'IA</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Sfrutta i modelli di IA all'avanguardia (linguaggio naturale, visione, voce) senza investimenti in ricerca e sviluppo. Noi gestiamo la tecnologia, tu ti concentri sul mercato.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-number">4</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Profitti dal Marketplace dei Plugin</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Sviluppa plugin personalizzati e vendili sul Marketplace Teiker. Attingi all'intera rete di partner e clienti per ottenere entrate aggiuntive.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-number">5</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Supporto Partner Dedicato</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Supporto tecnico prioritario, assistenza all'inserimento, risorse di co-marketing e un partner success manager dedicato.</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-number">6</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Scalabile in Ogni Settore</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">Teiker si adatta a sanità, ospitalità, vendita al dettaglio, cure e assistenza, formazione e altro ancora. Una piattaforma, infiniti mercati.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="glass-card mt-xl" style="background: white; padding: var(--spacing-md);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-md);">
+                    <div class="stat-highlight">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Settori di Mercato</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Pronto per White-Label</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Supporto Partner</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">0€</div>
+                        <div class="stat-label">Costi R&S Iniziali</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: WHITE LABEL (CUSTOMIZATION) -->
+    <section class="section" id="white-label">
+        <div class="container">
+            <h2 class="text-center mb-md">Personalizzazione White-Label Completa</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Presenta Teiker come il tuo prodotto. Ogni punto di contatto rifletterà il tuo brand. I tuoi clienti non sapranno mai quale motore c'è dietro le quinte.
+            </p>
+
+            <div class="pillar-grid">
+                <div>
+                    <div class="partner-badge">🏷️ Il Tuo Brand, La Nostra Potenza</div>
+                    <h3 style="margin-bottom: var(--spacing-md);">Tutto è personalizzabile</h3>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-lg);">
+                        Dalla schermata di benvenuto alle email, ogni elemento porta il tuo marchio. Noi scompariamo, il tuo brand brilla.
+                    </p>
+
+                    <div class="custom-pills-grid">
+                        <span class="custom-pill">🎨 Logo e Brand</span>
+                        <span class="custom-pill">🌐 Dominio/URL Personalizzato</span>
+                        <span class="custom-pill">🎭 Palette di Colori</span>
+                        <span class="custom-pill">✨ Skin e Tema Interfaccia</span>
+                        <span class="custom-pill">📧 Template Email</span>
+                        <span class="custom-pill">📱 Icona e Nome dell'App</span>
+                        <span class="custom-pill">🗣️ Voce e Personalità</span>
+                        <span class="custom-pill">🌍 Pacchetti Lingua</span>
+                        <span class="custom-pill">📄 Landing Page Personalizzate</span>
+                        <span class="custom-pill">📊 Dashboard Personalizzata</span>
+                    </div>
+                </div>
+
+                <!-- Mockup visualization -->
+                <div class="wl-mockup">
+                    <h4 style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--spacing-lg);">
+                        Configurazione White-Label
+                    </h4>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #f59e0b;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Logo</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">Logo YourBrand™ caricato ✓</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #3b82f6;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Domain</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">assistant.yourbrand.com</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #10b981;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Colore Principale</p>
+                            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #3b82f6; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #10b981; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #f59e0b; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #ef4444; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <p style="color: white; font-weight: 600; margin: 0; font-size: 0.85rem;">Personalizzato ✓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #ec4899;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Skin</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">Tema Scuro Moderno applicato ✓</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #8b5cf6;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Personalità Vocale</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">Persona personalizzata – "Sophie" ✓</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: var(--spacing-lg); padding: 0.75rem; background: rgba(139,92,246,0.2); border-radius: var(--radius-md); text-align: center;">
+                        <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.85rem;">
+                            ✨ Tutte le modifiche vengono pubblicate all'istante — senza dover programmare
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CREATE YOUR OWN ASSISTANT -->
+    <section class="section" id="assistants" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Crea il Tuo Assistente AI</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Grazie all'<strong>architettura a plugin di Teiker</strong>, puoi costruire qualsiasi assistente IA per il tuo settore. Nessuna competenza IA richiesta.
+            </p>
+
+            <div class="grid-3 mb-xl" style="gap: var(--spacing-lg);">
+                <div class="assistant-card">
+                    <div class="assistant-icon">🛒</div>
+                    <h4 style="margin-bottom: 0.5rem;">Assistente alle Vendite</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Guida i clienti alla scoperta dei prodotti, rispondi alle domande e chiudi le vendite — 24/7.
+                    </p>
+                </div>
+
+                <div class="assistant-card">
+                    <div class="assistant-icon">🏪</div>
+                    <h4 style="margin-bottom: 0.5rem;">Commercio e Vendita</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Gestisci richieste di inventario, ricerca negozi, programmi fedeltà o tracking degli ordini in tempo reale.
+                    </p>
+                </div>
+
+                <div class="assistant-card">
+                    <div class="assistant-icon">📅</div>
+                    <h4 style="margin-bottom: 0.5rem;">Prenotazioni</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Hotel, ristoranti, cliniche — gestisci appuntamenti, promemoria e cancellazioni con intelligenza.
+                    </p>
+                </div>
+
+                <div class="assistant-card">
+                    <div class="assistant-icon">🏥</div>
+                    <h4 style="margin-bottom: 0.5rem;">Companion per la Salute</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Promemoria per farmaci, pianificazione visite mediche, triage dei sintomi e visite per pazienti.
+                    </p>
+                </div>
+
+                <div class="assistant-card">
+                    <div class="assistant-icon">🎓</div>
+                    <h4 style="margin-bottom: 0.5rem;">Educazione e Formazione</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Creazione di percorsi personalizzati, generatore quiz intelligenti e sessioni di tutoraggio.
+                    </p>
+                </div>
+
+                <div class="assistant-card">
+                    <div class="assistant-icon">🏠</div>
+                    <h4 style="margin-bottom: 0.5rem;">Gestione Immobiliare</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Assistenza per proprietari o inquilini su problemi e richieste interne, domotica smart e inviti visitatore intelligente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                <div class="pillar-grid">
+                    <div>
+                        <div class="partner-badge">🧩 Architettura Basata su Plugin</div>
+                        <h3 style="margin-bottom: var(--spacing-md);">Unisci tutte le capacità</h3>
+                        <p style="color: var(--color-gray-600);">
+                            Ogni assistente è creato combinando plugin. Serve un calendario? Aggiungi il plugin Calendario. Servono pagamenti? Aggiungi Pagamenti. Le possibilità sono illimitate.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: var(--spacing-md);">
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Combina qualsiasi tipologia di espansione interna liberamente
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Installa in un semplice clic e progetta via interfaccia web visuale
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Dialogo su intelligenze multimodali audio/voce e testuali in un tocco
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Aggiungi i documenti aziendali o personali specifici su cui allenare le memorie IA
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="position: relative;">
+                        <div style="background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100)); border-radius: var(--radius-xl); padding: var(--spacing-xl);">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-sm);">
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📞</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Chiamate</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📊</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Analytics</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">💳</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Pagamenti</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📅</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Calendari</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">🗄️</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">CRM</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">🔔</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Avvisi</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">🌐</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">API</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">➕</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Espansioni</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DEVELOP YOUR OWN PLUGINS -->
+    <section class="section" id="plugins">
+        <div class="container">
+            <h2 class="text-center mb-md">Sviluppa e Vendi le Tue Estensioni Plugin</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Sviluppa plugin personalizzati. Tienili privati per i clienti o <strong>pubblicali sul Teiker Marketplace</strong> per guadagnare dall'intera rete.
+            </p>
+
+            <!-- Plugin development flow -->
+            <div class="plugin-flow">
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">💡</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Nasci un'idea</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Analizza scopi o mancanze d'affari</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">⚙️</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Sviluppa il codice</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Implementa test veri d'architettura logiche cloud ed IA</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">✅</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Ricevi Verifiche</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Ottieni approvazione di qualità sicura e protetta contro hacker</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">🚀</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Spedisci al Mondo</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Marketplace Pubblico</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step" style="background: var(--gradient-primary); color: white;">
+                    <div style="font-size: 2rem;">💰</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: white;">Genera Rendite</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: rgba(255,255,255,0.8);">I ricavati abbonamento portati dalle tue preziose linee create a te in tasca</p>
+                </div>
+            </div>
+
+            <div class="grid-2-columns-fixed" style="gap: var(--spacing-xl);">
+                <div class="glass-card" style="background: white;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">🔒</div>
+                    <h4 style="margin-bottom: var(--spacing-md); color: var(--color-primary-800);">Sviluppi Privati Protetti</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">
+                        Sviluppa plugin in esclusiva per i tuoi clienti. Perfetto per integrazioni proprietarie e flussi di lavoro personalizzati che ti danno un vantaggio competitivo.
+                    </p>
+                    <ul class="check-list">
+                        <li>Utilizzabile nei server proprietari coperti da NDA totali</li>
+                        <li>Infrastrutture server dell'azienda unite </li>
+                        <li>Controllo sul bugfix dell'opera</li>
+                        <li>Nessuno controllo necessario dal team in fase distribuzione</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card" style="background: white;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">🏪</div>
+                    <h4 style="margin-bottom: var(--spacing-md); color: var(--color-primary-800);">Il Marketplace per Programmatori </h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">
+                        Pubblica i tuoi plugin nell'ecosistema Teiker. Ogni partner o utente potrà scoprire funzioni e abbonarsi, generando per te una rendita passiva.
+                    </p>
+                    <ul class="check-list">
+                        <li>Prodotto aperto e diffuso ai fruitori sul pianeta in modo istantaneo</li>
+                        <li>Trattamento dei pagamenti passivi automatici </li>
+                        <li>Classifica e analisi statistica interazioni o recensioni attente  </li>
+                        <li>Copertura visiva d'espansione supportata dalle reti teiker di comunicazione</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card mt-xl"
+                style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(236, 72, 153, 0.03) 100%); padding: var(--spacing-xl);">
+                <div class="pillar-grid">
+                    <div>
+                        <h3 style="margin-bottom: var(--spacing-md);">Strumenti Completi Programmatori Software </h3>
+                        <p style="color: var(--color-gray-600);">
+                            Il nostro SDK completo, la documentazione e l'ambiente sandbox rendono lo sviluppo di plugin molto semplice.
+                        </p>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-sm);">
+                        <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                            <p style="font-weight: 700; color: var(--color-primary-700); margin: 0;">📚 SDK</p>
+                            <p style="font-size: 0.8rem; color: var(--color-gray-500); margin: 0.25rem 0 0;">.NET / REST API</p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                            <p style="font-weight: 700; color: var(--color-primary-700); margin: 0;">🧪 Sandbox</p>
+                            <p style="font-size: 0.8rem; color: var(--color-gray-500); margin: 0.25rem 0 0;">Ambienti prove senza bug cloud</p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                            <p style="font-weight: 700; color: var(--color-primary-700); margin: 0;">📖 Docs</p>
+                            <p style="font-size: 0.8rem; color: var(--color-gray-500); margin: 0.25rem 0 0;">Tutorial su linee codice precise al dettaglio  </p>
+                        </div>
+                        <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                            <p style="font-weight: 700; color: var(--color-primary-700); margin: 0;">👥 Comunità Unita</p>
+                            <p style="font-size: 0.8rem; color: var(--color-gray-500); margin: 0.25rem 0 0;">Esponenti del team base pronti nel gruppo discussivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT FORM -->
+    <section class="section" id="partner-contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container">
+            <h2 class="text-center" style="color: white; margin-bottom: var(--spacing-md);">Vuoi Entrare Nei Nostri Orizzonti?</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 700px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9); font-size: 1.25rem;">
+                Trascrivi tutto nel biglietto formale seguente ed un nostro esperto incaricato Partnership deciderà di risponderti un giorno netto di orologio circa.
+            </p>
+
+            <div class="glass-card-dark" style="max-width: 750px; margin: 0 auto; padding: var(--spacing-xl);">
+                <h3 style="margin-bottom: var(--spacing-lg); color: white; text-align: center;">Modello Invio Incarico</h3>
+                <form id="partner-contact-form" action="https://formspree.io/f/xgopjvon" method="POST"
+                    style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+
+                    <div class="partner-form-grid">
+                        <div>
+                            <label for="partner-name"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Nome Completo Personale *
+                            </label>
+                            <input id="partner-name" type="text" name="name" placeholder="John Smith" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="partner-company"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Azienda *
+                            </label>
+                            <input id="partner-company" type="text" name="company" placeholder="Acme Corporation" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div class="partner-form-grid">
+                        <div>
+                            <label for="partner-country"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Paese e luogo *
+                            </label>
+                            <input id="partner-country" type="text" name="country" placeholder="United Kingdom" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="partner-phone"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Telefono  Di Riferimento Unico*
+                            </label>
+                            <input id="partner-phone" type="tel" name="phone" placeholder="+44 20 1234 5678" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div class="partner-form-grid">
+                        <div>
+                            <label for="partner-email"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Email *
+                            </label>
+                            <input id="partner-email" type="email" name="email" placeholder="john@acme.com" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="partner-url"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Sito Della Professione (Non Obbligatorio)
+                            </label>
+                            <input id="partner-url" type="url" name="url" placeholder="https://www.acme.com"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="partner-observations"
+                            style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                            Usi Dediti a Teiker ed in che modo andremmo a combinare risultati.../ Varie 
+                        </label>
+                        <textarea id="partner-observations" name="observations"
+                            placeholder="Facci assaggiare una dimostrazione mentale sintetica d'idee per teiker espresse ad utenze mercate tue logiche."
+                            style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem; resize: vertical; min-height: 120px; font-family: inherit;"
+                            rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" id="partner-submit" class="btn btn-primary"
+                        style="width: 100%; font-size: 1.25rem; padding: 1.25rem;">Apertura di Richiamo e Segnalazione </button>
+                    <p id="partner-feedback"
+                        style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin: 0; min-height: 1.25em; text-align: center;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Info Su Teiker </h4>
+                    <p>Teiker è una piattaforma IA che i partner possono personalizzare e distribuire su scala globale.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Prodotti Offerti</h4>
+                    <a href="index.html" class="footer-link">Inizio Casa Teiker</a>
+                    <a href="accompagnamento.html" class="footer-link">Accompagnamento</a>
+                    <a href="gestione-salute.html" class="footer-link">Gestione Salute</a>
+                    <a href="emergenze.html" class="footer-link">Emergenze</a>
+                    <a href="sicurezza.html" class="footer-link">Sicurezza</a>
+                   
+                </div>
+
+                <div class="footer-section">
+                    <h4>Supporto</h4>
+                    <a href="#advantages" class="footer-link">Partner ed Esclusive Aiuto</a>
+                    <a href="#partner-contact" class="footer-link">Contattaci o Parla</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>🌐 Language</h4>
+                    <a href="https://www.teiker.online/partners.html" class="footer-link lang-active">English</a>
+                    <a href="https://www.teiker.online/es/partners.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/it/partner.html" class="footer-link lang-active">Italiano</a>
+                    <a href="https://www.teiker.online/pt/parceiros.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/partenaires.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/de/partner.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/partnery.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Tutti i Diritti Riservati dalla Teiker Software Group .</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+    <script>
+        // Partner contact form handler
+        document.addEventListener('DOMContentLoaded', () => {
+            const partnerForm = document.getElementById('partner-contact-form');
+            if (partnerForm) {
+                const submitBtn = document.getElementById('partner-submit');
+                const feedback = document.getElementById('partner-feedback');
+
+                partnerForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const formData = new FormData(partnerForm);
+                    const payload = Object.fromEntries(formData.entries());
+
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Invio...';
+                    feedback.style.color = 'rgba(255,255,255,0.8)';
+                    feedback.textContent = '';
+
+                    try {
+                        const response = await fetch('https://formspree.io/f/xgopjvon', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (response.ok) {
+                            feedback.style.color = 'rgba(150,255,180,0.95)';
+                            feedback.textContent = '✓ Segnalazione compiuta ed inviata alla nostra associazione sicura! Si resta in contatto entro ore scarse 24 !.';
+                            partnerForm.reset();
+                        } else {
+                            feedback.style.color = 'rgba(255,180,150,0.95)';
+                            feedback.textContent = 'C'é un errore non riconosciuto sul codice cloud ! RIPROVA';
+                        }
+                    } catch (_) {
+                        feedback.style.color = 'rgba(255,180,150,0.95)';
+                        feedback.textContent = 'Non ho preso la connessione server a questa domanda, scusa e procedi staccando l'orologio o provando poco più avanti!';
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Invia Richiesta';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Teiker знает, кто входит и выходит из дома вашего близкого — сиделки, семья, соседи или посторонние. Полный журнал каждого визита. Спокойствие для всей семьи.">
+    <title>Обнаружение присутствия – Знайте, кто у двери | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/presence-detection.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/presence-detection.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/deteccion-presencia.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/deteccao-presenca.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/detection-presence.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/rilevamento-presenza.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/anwesenheitserkennung.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/obnaruzhenie-prisutstviya.html">
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/ru/obnaruzhenie-prisutstviya.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="soprovozhdenie.html" class="nav-link">Сопровождение</a></li>
+                    <li><a href="upravlenie-zdoroviem.html" class="nav-link">Здоровье</a></li>
+                    <li><a href="ekstrennye-situatsii.html" class="nav-link">Экстренные случаи</a></li>
+                    <li><a href="bezopasnost.html" class="nav-link">Безопасность</a></li>
+                    <li><a href="partnery.html" class="nav-link">Партнеры</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Связаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 55%, #60a5fa 100%);">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1>Всегда знайте,<br>кто пришел.</h1>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Teiker распознает всех, кто входит в дом и выходит из него — сиделок, членов семьи, соседей или незнакомцев. Каждый визит фиксируется автоматически с указанием времени прихода и ухода, чтобы вы всегда знали, <strong>кто был и как долго</strong>.
+                </p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🪪 100%
+                        </div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Посетители опознаны</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🕐 Авто</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Учет приходов и уходов</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🚨 Real‑time</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Сигнал о незнакомцах</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#how-it-works" class="btn btn-primary">Как это работает</a>
+                    <a href="#contact" class="btn btn-outline">Консультация</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Вопросы, которые не должны мучить семью</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Когда пожилой человек живет дома с помощью сиделок или регулярных посетителей, возникают вопросы, которые трудно задать напрямую, но о которых невозможно не думать.
+            </p>
+            <div class="grid-3 mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🕵️</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Действительно ли пришла сиделка?</h4>
+                    <p style="color: var(--color-gray-600);">Вы платите за утренние визиты. Были ли они сегодня? Вовремя ли? Как долго пробыли? Без расспросов вы не узнаете, а спрашивать не всегда удобно.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🚪</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Кто еще заходит в дом?</h4>
+                    <p style="color: var(--color-gray-600);">У нескольких человек есть ключи — у соседа, уборщицы, внука. Отследить, кто и когда приходил, невозможно. Если что-то пропадет, записей нет.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">😟</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Были ли в доме чужие?</h4>
+                    <p style="color: var(--color-gray-600);">Ваш близкий может открыть дверь кому угодно. Если войдет незнакомец, вы узнаете об этом слишком поздно — если узнаете вообще.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary-800);">Teiker отвечает на все эти вопросы — автоматически.</p>
+                <p style="font-size: 1.125rem; color: var(--color-gray-700); max-width: 800px; margin: 0 auto;">Каждый входящий в дом идентифицируется, регистрируется и, если он не узнан, мгновенно помечается. Вы всегда знаете, кто пришел, когда и на какой срок.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="text-center mb-xl">Как работает обнаружение присутствия</h2>
+
+            <!-- Step 1 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        1</div>
+                    <div>
+                        <h3 style="color: var(--color-primary-800); margin: 0;">🪪 РАСПОЗНАВАНИЕ КАЖДОГО ПОСЕТИТЕЛЯ</h3>
+                        <p style="color: var(--color-primary-700); margin: 0; font-size: 0.95rem;">Знакомые лица приветствуются. Незнакомые — фиксируются.</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Когда кто-то входит в дом, Teiker понимает, кто это. Сиделки, родные, соседи и постоянные гости распознаются автоматически. Если Teiker не узнает человека, вы получите мгновенное уведомление.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">👩‍⚕️ <strong>Персонал:</strong> присутствие подтверждено, время визита записано.</li>
+                            <li style="margin-bottom: 0.5rem;">👨‍👩‍👧 <strong>Семья:</strong> ваш близкий знает, что визит отмечен, и чувствует заботу.</li>
+                            <li style="margin-bottom: 0.5rem;">🏘️ <strong>Соседи и друзья:</strong> распознаются и вносятся в журнал без тревоги.</li>
+                            <li style="margin-bottom: 0.5rem;">❓ <strong>Незнакомец:</strong> немедленное оповещение семьи.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: var(--color-primary-50); border: 1px solid var(--color-primary-100);">
+                        <h5 style="color: var(--color-primary-800); margin-bottom: 0.5rem;">Примеры уведомлений</h5>
+                        <p style="font-style: italic; color: var(--color-primary-700); font-size: 0.95rem; margin-bottom: 0.5rem;">✅ "Ольга (сиделка) пришла в 09:03."</p>
+                        <p style="font-style: italic; color: var(--color-primary-700); font-size: 0.95rem; margin-bottom: 0.5rem;">✅ "Дочь Лариса пришла в 16:47."</p>
+                        <p style="font-style: italic; color: var(--color-primary-700); font-size: 0.95rem; margin-bottom: 0.5rem;">✅ "Сосед Антон ушел в 18:15."</p>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; font-weight: 600;">⚠️ "В дом вошел неустановленный человек. Пожалуйста, проверьте."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        2</div>
+                    <div>
+                        <h3 style="color: var(--color-primary-800); margin: 0;">🕐 АВТОМАТИЧЕСКИЙ ЖУРНАЛ ВИЗИТОВ</h3>
+                        <p style="color: var(--color-primary-700); margin: 0; font-size: 0.95rem;">Полная история посещений под рукой.</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="glass-card" style="background: var(--color-primary-50); border: 1px solid var(--color-primary-100);">
+                        <h5 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">Пример журнала — Вторник</h5>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-weight: 600; color: var(--color-gray-800);">👩‍⚕️ Ольга (сиделка)</span>
+                                <span style="font-size: 0.85rem; color: var(--color-gray-500);">09:03 – 10:41</span>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-weight: 600; color: var(--color-gray-800);">🏘️ Антон (сосед)</span>
+                                <span style="font-size: 0.85rem; color: var(--color-gray-500);">12:15 – 12:28</span>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-weight: 600; color: var(--color-gray-800);">👨‍👩‍👧 Лариса (дочь)</span>
+                                <span style="font-size: 0.85rem; color: var(--color-gray-500);">16:47 – 19:30</span>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-weight: 600; color: var(--color-gray-800);">👩‍⚕️ Ольга (сиделка)</span>
+                                <span style="font-size: 0.85rem; color: var(--color-gray-500);">20:55 – 21:40</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Все приходы и уходы фиксируются сами собой. Никому не нужно ничего подписывать или отмечать. Журнал всегда доступен — для вашего спокойствия или по любой другой необходимости.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">📋 <strong>Полная история:</strong> смотрите все визиты за последние дни или недели.</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Время на месте:</strong> знайте точно, сколько пробыла каждая сиделка или гость.</li>
+                            <li style="margin-bottom: 0.5rem;">📱 <strong>Доступ везде:</strong> проверяйте журнал с любого устройства в любое время.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        3</div>
+                    <div>
+                        <h3 style="color: var(--color-primary-800); margin: 0;">🚨 МГНОВЕННЫЙ СИГНАЛ О ПОСТОРОННИХ</h3>
+                        <p style="color: var(--color-primary-700); margin: 0; font-size: 0.95rem;">Ничто не останется незамеченным.</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Если Teiker обнаружит вход человека, которого он не узнает, система немедленно отправит сигнал семье. Вы сможете связаться с близким или сразу выехать на место.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🔔 <strong>Тревога за секунды</strong> — а не минуты.
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">📞 <strong>Быстрая реакция:</strong> позвоните близкому или проверьте ситуацию лично.</li>
+                            <li style="margin-bottom: 0.5rem;">➕ <strong>Легкое добавление:</strong> если это ожидаемый гость (новый врач, мастер), его можно внести в список, чтобы в будущем он распознавался как свой.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #FEF2F2; border: 1px solid #FECACA;">
+                        <h5 style="color: #991B1B; margin-bottom: 0.5rem;">Тревога: Незнакомый посетитель</h5>
+                        <p style="color: #7F1D1D; font-size: 0.95rem; margin-bottom: 0.75rem;">⚠️ <strong>Teiker обнаружил неузнанного человека в доме Марии Ивановны.</strong></p>
+                        <p style="color: #991B1B; font-size: 0.9rem; margin-bottom: 0.5rem;">Время: 11:24</p>
+                        <p style="color: #991B1B; font-size: 0.9rem; margin-bottom: 1rem;">Статус: Человек все еще в доме.</p>
+                        <p style="color: #7F1D1D; font-size: 0.85rem; font-style: italic;">— Нажмите, чтобы позвонить или открыть журнал визитов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO IT HELPS -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Полный контроль за посещениями</h2>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍⚕️</div>
+                    <h4 class="feature-title">Сиделки и персонал</h4>
+                    <p class="feature-description">Будьте уверены, что специалисты приходят вовремя, остаются на положенный срок и уходят по графику. Никаких догадок.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h4 class="feature-title">Члены семьи</h4>
+                    <p class="feature-description">Каждый визит родных фиксируется. Братья, дети, внуки — все данные доступны, чтобы вся семья была в курсе заботы о близком.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏘️</div>
+                    <h4 class="feature-title">Соседи и частые гости</h4>
+                    <p class="feature-description">Доверенные соседи добавляются в список один раз и узнаются системой всегда. Их визиты отмечаются, но не вызывают тревогу.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h4 class="feature-title">Службы сервиса</h4>
+                    <p class="feature-description">Курьеры, мастера, социальные работники — любого ожидаемого гостя можно зарегистрировать заранее для обычного прохода.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❓</div>
+                    <h4 class="feature-title">Посторонние лица</h4>
+                    <p class="feature-description">Любой, кого нет в списке, вызывает немедленную тревогу у семьи. Вы решаете, как реагировать — звонком или вызовом служб.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h4 class="feature-title">Полная история</h4>
+                    <p class="feature-description">Детальный журнал каждого прихода и ухода всегда под рукой. Просматривайте данные за дни, недели или месяцы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-md">Безопасность с уважением к достоинству</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Система обнаружения присутствия создана с заботой — как о вашем близком, так и о тех, кто его навещает.
+            </p>
+            <div class="grid-2-columns-fixed">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🔐 Данные под вашим контролем</h4>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <div style="display: flex; gap: 0.75rem; align-items: start;">
+                            <span style="color: #10b981; font-size: 1.25rem;">✅</span>
+                            <p style="margin: 0; color: var(--color-gray-700);">Вы решаете, кто входит в список доверенных лиц</p>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; align-items: start;">
+                            <span style="color: #10b981; font-size: 1.25rem;">✅</span>
+                            <p style="margin: 0; color: var(--color-gray-700);">Вы выбираете, кто из членов семьи получает уведомления</p>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; align-items: start;">
+                            <span style="color: #10b981; font-size: 1.25rem;">✅</span>
+                            <p style="margin: 0; color: var(--color-gray-700);">История визитов зашифрована и доступна только авторизованным пользователям</p>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; align-items: start;">
+                            <span style="color: #10b981; font-size: 1.25rem;">✅</span>
+                            <p style="margin: 0; color: var(--color-gray-700);">Данные никогда не передаются третьим лицам</p>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; align-items: start;">
+                            <span style="color: #10b981; font-size: 1.25rem;">✅</span>
+                            <p style="margin: 0; color: var(--color-gray-700);">Соответствие нормам защиты данных (GDPR)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🤝 Прозрачность для посетителей</h4>
+                    <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md);">Система работает лучше всего, когда все о ней знают. Teiker поощряет открытость в отношениях с сиделками и гостями — и это дает важный эффект:</p>
+                    <div style="background: var(--color-primary-50); padding: var(--spacing-md); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                        <p style="color: var(--color-primary-800); font-weight: 600; margin-bottom: 0.5rem;">Люди, знающие о фиксации визитов, как правило, более пунктуальны, внимательны и профессиональны.</p>
+                        <p style="color: var(--color-primary-700); font-size: 0.95rem; margin: 0;">Знание о том, что за домом ведется надежный присмотр, повышает качество ухода без лишних слов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Часто задаваемые вопросы</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">Как Teiker распознает посетителей?</p>
+                    <p class="faq-answer">Teiker использует технологию распознавания лиц для идентификации людей при входе и выходе. Знакомые люди регистрируются один раз и узнаются системой автоматически.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Что будет, если придет кто-то новый?</p>
+                    <p class="faq-answer">Если Teiker не узнает человека, он сразу отправит сигнал тревоги выбранным членам семьи с указанием времени входа и информацией, в доме ли еще человек.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Как добавить нового человека в список?</p>
+                    <p class="faq-answer">Это делается мгновенно через приложение Teiker. После добавления человек будет узнаваться при будущих визитах без лишних сигналов тревоги.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Могу ли я увидеть, как долго пробыла сиделка?</p>
+                    <p class="faq-answer">Да. В журнале визитов отображается точное время прихода и ухода каждого опознанного лица. Вы можете проверить это в приложении в любое время.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Нужно ли сиделкам или гостям что-то нажимать?</p>
+                    <p class="faq-answer">Нет. Система работает автоматически. Посетителям не нужно ничего нажимать или подписывать. Распознавание происходит незаметно при входе.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Кто может видеть журнал визитов?</p>
+                    <p class="faq-answer">Только те люди, которым ваш близкий предоставил доступ. Контроль над историей посещений остается у владельца дома.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Знайте точно, кто переступил порог.</h2>
+            <h3 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: var(--spacing-xl);">Уход подтвержден. Визиты родных отмечены. Посторонние обнаружены мгновенно.</h3>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="font-size: 1.25rem; padding: 1.25rem;">Запросить информацию</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О Teiker</h4>
+                    <p>Teiker родился из реальной потребности заботиться о наших старших, не лишая их независимости.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <a href="index.html" class="footer-link">Главная</a>
+                    <a href="soprovozhdenie.html" class="footer-link">Сопровождение</a>
+                    <a href="upravlenie-zdoroviem.html" class="footer-link">Здоровье</a>
+                    <a href="ekstrennye-situatsii.html" class="footer-link">Экстренные случаи</a>
+                    <a href="bezopasnost.html" class="footer-link">Безопасность</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Язык</h4>
+                    <a href="https://www.teiker.online/presence-detection.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/deteccion-presencia.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/deteccao-presenca.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/detection-presence.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/rilevamento-presenza.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/anwesenheitserkennung.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/obnaruzhenie-prisutstviya.html" class="footer-link lang-active">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>

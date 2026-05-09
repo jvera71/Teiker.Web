@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Votre assistant santé personnel : rappels, rendez-vous et organisation. Teiker vous aide à gérer vos médicaments et à ne jamais manquer un rendez-vous.">
+    <title>Gestion de la Santé – Organisation et tranquillité | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/health-management.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/health-management.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/gestion-salud.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/gestao-saude.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/gestion-sante.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/gestione-salute.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/gesundheitsmanagement.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/upravlenie-zdoroviem.html">
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/fr/gestion-sante.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="accompagnement.html" class="nav-link">Accompagnement</a></li>
+                    <li><a href="gestion-sante.html" class="nav-link">Santé</a></li>
+                    <li><a href="urgences.html" class="nav-link">Urgences</a></li>
+                    <li><a href="securite.html" class="nav-link">Sécurité</a></li>
+                    <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero health-hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1>Votre santé, organisée.<br>Médicaments à l'heure, rendez-vous rappelés.</h1>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Teiker vous aide à gérer votre santé
+                    :
+                    rappels de médicaments, identification visuelle des comprimés, alertes de stock et rappels de
+                    rendez-vous — le tout
+                    <strong>sans remplacer vos professionnels de santé</strong>.
+                </p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">💊 98%
+                        </div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Adhésion au traitement
+                        </p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">📅 0
+                        </div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Rendez-vous oubliés
+                        </p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">
+                            👨‍👩‍👧‍👦 100%</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Tranquillité pour la
+                            famille</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#medication" class="btn btn-primary">Voir comment ça marche</a>
+                    <a href="#contact" class="btn btn-outline">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="disclaimer-banner">
+                <h3 style="margin-bottom: 0.5rem;">⚠️ AVIS IMPORTANT : TEIKER N'EST PAS UN PERSONNEL MÉDICAL</h3>
+                <p style="margin-bottom: 1rem;">Teiker est un <strong>assistant organisationnel</strong>. <strong>Il ne
+                        donne JAMAIS
+                        de conseils médicaux, de diagnostics ou de recommandations de traitement.</strong></p>
+                <div class="grid-2-sm">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>❌ Ne remplace PAS les médecins, infirmiers ou pharmaciens</li>
+                        <li>❌ Ne diagnostique PAS de maladies</li>
+                        <li>❌ Ne recommande PAS de médicaments ou de doses</li>
+                    </ul>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✅ Vous aide à organiser et à vous rappeler ce qui a été prescrit</li>
+                        <li>✅ Vous rappelle de consulter des professionnels en cas de doute</li>
+                        <li style="font-weight: 600; margin-top: 0.5rem;">⚕️ Pour tout problème de santé : consultez
+                            TOUJOURS un
+                            professionnel.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Oublier ses médicaments est un problème sérieux</h2>
+            <div class="grid-3 mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🤔</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">L'Oubli</h4>
+                    <p style="color: var(--color-gray-600);">"Ai-je pris mon comprimé ce matin ? Dois-je le reprendre au
+                        cas où ?"</p>
+                    <p style="font-weight: 600; color: #dc2626; font-size: 0.9rem;">Conséquence : doubles doses
+                        dangereuses
+                        ou échec du traitement.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">😵</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">La Confusion</h4>
+                    <p style="color: var(--color-gray-600);">"Quelle boîte est pour mon cœur ? Laquelle pour la tension
+                        ? Laquelle avant le petit-déjeuner ?"</p>
+                    <p style="font-weight: 600; color: #dc2626; font-size: 0.9rem;">Conséquence : prendre le mauvais
+                        comprimé.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📦</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">La Rupture de Stock</h4>
+                    <p style="color: var(--color-gray-600);">"Je n'ai plus de comprimés. La pharmacie est fermée et je
+                        vais devoir attendre demain."</p>
+                    <p style="font-weight: 600; color: #dc2626; font-size: 0.9rem;">Conséquence : interruption du
+                        traitement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="medication">
+        <div class="container">
+            <h2 class="text-center mb-xl">Vos médicaments, toujours à l'heure et bien organisés</h2>
+
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: #0D9488; color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        1</div>
+                    <div>
+                        <h3 style="color: #115E59; margin: 0;">💊 RAPPELS INTELLIGENTS</h3>
+                        <p style="color: #134E4A; margin: 0; font-size: 0.95rem;">Ne manquez jamais une dose</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Configurez vos
+                            médicaments, doses et horaires. Teiker vous le rappellera ponctuellement.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🔊 <strong>Rappel vocal :</strong> "C'est l'heure de
+                                votre
+                                médicament du matin."</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Suivi en douceur :</strong> Vérifie à nouveau
+                                si vous
+                                ne confirmez pas.</li>
+                            <li style="margin-bottom: 0.5rem;">👨‍👩‍👧 <strong>Alerte famille :</strong> Si vous
+                                manquez une
+                                dose importante.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #F0FDFA; border: 1px solid #CCFBF1;">
+                        <h5 style="color: #115E59; margin-bottom: 0.5rem;">Exemple d'interaction</h5>
+                        <p style="font-style: italic; color: #134E4A; font-size: 0.95rem; margin-bottom: 0.5rem;">-
+                            "Bonjour Marguerite. C'est l'heure de votre Ramipril 10mg. Un comprimé avec le
+                            petit-déjeuner."</p>
+                        <p style="font-style: italic; color: #134E4A; font-size: 0.95rem;">- "Marguerite, avez-vous déjà
+                            pris
+                            votre médicament ?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: #0891B2; color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        2</div>
+                    <div>
+                        <h3 style="color: #164E63; margin: 0;">📸 IDENTIFICATION VISUELLE</h3>
+                        <p style="color: #155E75; margin: 0; font-size: 0.95rem;">En sécurité en cas de doute</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="glass-card" style="background: #ECFEFF; border: 1px solid #CFFAFE;">
+                        <h5 style="color: #164E63; margin-bottom: 0.5rem;">Quel est ce comprimé ?</h5>
+                        <p style="font-style: italic; color: #155E75; font-size: 0.95rem; margin-bottom: 0.5rem;">VOUS :
+                            "Teiker, j'ai un petit comprimé rond blanc — lequel est-ce ?"</p>
+                        <p style="font-style: italic; color: #155E75; font-size: 0.95rem;">TEIKER : "C'est votre
+                            Aspirine
+                            100mg. Celui-là est pour le soir."</p>
+                    </div>
+                    <div>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">✅ Idéal si vous avez plusieurs boîtes similaires.</li>
+                            <li style="margin-bottom: 0.5rem;">✅ Utile si vous avez des difficultés à lire les petits
+                                caractères.
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ <strong>Rappel :</strong> En cas de doute, vérifiez
+                                toujours
+                                auprès de votre pharmacien.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: #059669; color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        3</div>
+                    <div>
+                        <h3 style="color: #064E3B; margin: 0;">📦 GESTION DES STOCKS</h3>
+                        <p style="color: #065F46; margin: 0; font-size: 0.95rem;">Ne soyez jamais à court de médicaments
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">📊 Déduit automatiquement chaque dose prise.</li>
+                            <li style="margin-bottom: 0.5rem;">📅 Vous alerte à l'avance (7 jours avant la rupture de
+                                stock).
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">📱 Notifie votre famille si un achat est nécessaire.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #ECFDF5; border: 1px solid #D1FAE5;">
+                        <h5 style="color: #064E3B; margin-bottom: 0.5rem;">Alerte proactive</h5>
+                        <p style="font-style: italic; color: #065F46; font-size: 0.95rem;">TEIKER : "Marguerite, il ne
+                            vous
+                            reste que 7 comprimés de Ramipril. Souhaitez-vous que je rappelle à votre fille d'en
+                            racheter ?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="appointments" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Ne manquez plus jamais un rendez-vous important</h2>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📅</div>
+                    <h4 style="color: var(--color-primary-700);">Rappels Multiples</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gray-600);">Vous êtes rappelé une semaine à
+                        l'avance, la
+                        veille et le jour même.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📝</div>
+                    <h4 style="color: var(--color-primary-700);">Préparation</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gray-600);">Il vous rappelle ce qu'il faut apporter
+                        et vous aide
+                        à noter les questions pour le médecin.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🤝</div>
+                    <h4 style="color: var(--color-primary-700);">Suivi</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-gray-600);">À votre retour, il vous demande comment
+                        ça s'est passé
+                        et met à jour votre plan de médication si nécessaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="wearables" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0c1a2e 100%); color: white;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--spacing-xl);">
+                <h2 style="color: white; margin-bottom: var(--spacing-md);">📡 Votre montre raconte tout</h2>
+                <p style="color: rgba(255,255,255,0.8); max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Teiker se connecte à 100 % à votre montre connectée ou bracelet d'activité. Quatre tableaux de bord santé expliqués en langage clair — sans jargon médical.</p>
+            </div>
+            <div class="grid-4" style="margin-bottom: var(--spacing-xl);">
+                <div class="glass-card-dark" style="padding: var(--spacing-lg); border-left: 4px solid #059669;">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">🏃‍♂️</div>
+                    <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1rem;">Activité et Énergie Quotidienne</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin: 0;">Pas, calories et mouvements — chaque jour, d'un coup d'œil.</p>
+                </div>
+                <div class="glass-card-dark" style="padding: var(--spacing-lg); border-left: 4px solid #0891B2;">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">🚶‍♀️</div>
+                    <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1rem;">Mobilité et Analyse de la Marche</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin: 0;">Équilibre et démarche pour aider à prévenir les chutes.</p>
+                </div>
+                <div class="glass-card-dark" style="padding: var(--spacing-lg); border-left: 4px solid #DC2626;">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">❤️</div>
+                    <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1rem;">Signes Vitaux et Récupération</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin: 0;">Rythme cardiaque, oxygène et qualité du sommeil au même endroit.</p>
+                </div>
+                <div class="glass-card-dark" style="padding: var(--spacing-lg); border-left: 4px solid #7C3AED;">
+                    <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚖️</div>
+                    <h4 style="color: white; margin-bottom: 0.5rem; font-size: 1rem;">Profil Physique et Environnement</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin: 0;">Composition corporelle et données ambiantes pour une vue complète.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="analyses-wearables.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Explorer les tableaux de bord santé →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="limitations">
+        <div class="container">
+            <div
+                style="background: #FEE2E2; padding: var(--spacing-xl); border-radius: var(--radius-xl); border: 2px solid #FECACA;">
+                <h2 class="text-center mb-lg" style="color: #991B1B;">⚠️ CE QUE TEIKER NE FAIT PAS</h2>
+                <div class="grid-2">
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md);">
+                        <h4 style="color: #991B1B; margin-bottom: 0.5rem;">❌ Ne Diagnostique PAS</h4>
+                        <p style="color: var(--color-gray-700);">Ne peut pas vous dire quelle maladie vous avez ou
+                            interpréter
+                            les symptômes.</p>
+                    </div>
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md);">
+                        <h4 style="color: #991B1B; margin-bottom: 0.5rem;">❌ Ne Prescrit PAS</h4>
+                        <p style="color: var(--color-gray-700);">Ne peut pas prescrire ou recommander de médicaments ou
+                            de doses.</p>
+                    </div>
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md);">
+                        <h4 style="color: #991B1B; margin-bottom: 0.5rem;">❌ Ne Modifie PAS les Doses</h4>
+                        <p style="color: var(--color-gray-700);">Vous renverra toujours vers une consultation
+                            professionnelle.
+                        </p>
+                    </div>
+                    <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md);">
+                        <h4 style="color: #991B1B; margin-bottom: 0.5rem;">❌ N'Interprète PAS les Résultats d'Examens
+                        </h4>
+                        <p style="color: var(--color-gray-700);">Lire vos résultats médicaux est exclusivement le
+                            travail de
+                            votre médecin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faq" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Foire aux questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">Teiker peut-il prescrire des médicaments ?</p>
+                    <p class="faq-answer">NON. Teiker n'est PAS médecin. Il vous aide seulement à organiser et à vous
+                        rappeler les
+                        médicaments que VOTRE MÉDECIN a déjà prescrits.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Que se passe-t-il si j'oublie de prendre un comprimé ?</p>
+                    <p class="faq-answer">Teiker vous le rappellera plusieurs fois. Si vous l'oubliez toujours, il
+                        l'enregistre et
+                        alerte votre famille. Vous devriez consulter votre médecin sur la marche à suivre en cas d'oubli
+                        d'une dose.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Est-il sûr que Teiker connaisse mes médicaments ?</p>
+                    <p class="faq-answer">Oui. Les informations sont cryptées et accessibles uniquement par vous et les
+                        personnes
+                        que vous autorisez. Elles ne sont partagées avec personne d'autre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Vos médicaments organisés. Votre santé mieux
+                gérée.</h2>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="font-size: 1.25rem; padding: 1.25rem;">Demander des informations</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos de Teiker</h4>
+                    <p>Teiker est né du besoin réel de prendre soin de nos aînés sans qu'ils perdent leur indépendance.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produit</h4>
+                    <a href="index.html" class="footer-link">Accueil</a>
+                    <a href="accompagnement.html" class="footer-link">Accompagnement</a>
+                    <a href="gestion-sante.html" class="footer-link">Santé</a>
+                    <a href="urgences.html" class="footer-link">Urgences</a>
+                    <a href="securite.html" class="footer-link">Sécurité</a>
+                    <a href="analyses-wearables.html" class="footer-link">Analyses Wearables</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="index.html#faq" class="footer-link">FAQ</a>
+                    <a href="index.html#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Langue</h4>
+                    <a href="https://www.teiker.online/health-management.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/gestion-salud.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/gestao-saude.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/gestion-sante.html" class="footer-link lang-active">Français</a>
+                    <a href="https://www.teiker.online/it/gestione-salute.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/gesundheitsmanagement.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/upravlenie-zdoroviem.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>

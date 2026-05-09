@@ -1,0 +1,22 @@
+# ============================================================
+# robots.txt — www.teiker.online
+# ============================================================
+
+# All crawlers: allow everything except the API endpoint
+User-agent: *
+Allow: /
+
+# Block direct access to the contact form API
+Disallow: /api/
+
+# Block any build/config artefacts that shouldn't be indexed
+Disallow: /.gemini/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://www.teiker.online/sitemap.xml
+
+# ============================================================
+# Crawl-rate hint (optional, respected by some bots)
+# ============================================================
+Crawl-delay: 1

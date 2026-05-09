@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Become a Teiker Dealer. Resell a unique AI companion platform under your own brand, offer fully customisable AI assistants to any business, and monetise through the plugin marketplace.">
+    <title>Dealers – Resell the #1 AI Companion Platform | Teiker</title>
+    <link rel="preload" href="index.css" as="style"><link rel="preload" href="main.js" as="script"><link rel="stylesheet" href="index.css">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/dealers.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/dealers.html">
+    <link rel="alternate" hreflang="en"  href="https://www.teiker.online/dealers.html">
+    <link rel="alternate" hreflang="es"  href="https://www.teiker.online/es/distribuidores.html">
+    <link rel="alternate" hreflang="pt"  href="https://www.teiker.online/pt/distribuidores.html">
+    <link rel="alternate" hreflang="fr"  href="https://www.teiker.online/fr/revendeurs.html">
+    <link rel="alternate" hreflang="it"  href="https://www.teiker.online/it/rivenditori.html">
+    <link rel="alternate" hreflang="de"  href="https://www.teiker.online/de/haendler.html">
+    <link rel="alternate" hreflang="ru"  href="https://www.teiker.online/ru/dilery.html">
+
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <style>
+        /* ============================================
+           DEALERS PAGE — Specific Styles
+           ============================================ */
+
+        .dealers-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 30%, #4c1d95 65%, #7c3aed 100%) !important;
+        }
+
+        /* Advantage numbered items */
+        .advantage-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            font-family: var(--font-display);
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
+            flex-shrink: 0;
+            transition: transform var(--transition-bounce);
+        }
+
+        .advantage-item:hover .advantage-number {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .advantage-item {
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: start;
+            padding: var(--spacing-xl);
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-glass);
+            transition: all var(--transition-slow);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advantage-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-glass-hover);
+        }
+
+        .advantage-item:hover::before { opacity: 1; }
+
+        /* Customisation pills */
+        .custom-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--color-primary-50);
+            border: 1px solid var(--color-primary-200);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            color: var(--color-primary-800);
+            font-size: 0.95rem;
+            transition: all var(--transition-base);
+        }
+
+        .custom-pill:hover {
+            background: var(--color-primary-100);
+            border-color: var(--color-primary-400);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .custom-pills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: var(--spacing-lg);
+        }
+
+        /* White-label mockup */
+        .wl-mockup {
+            background: linear-gradient(135deg, #1e1b4b, #312e81);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wl-mockup::before {
+            content: '';
+            position: absolute;
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+            top: -100px; right: -100px;
+            pointer-events: none;
+        }
+
+        .wl-mockup-row {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .wl-mockup-row:last-child { border-bottom: none; }
+
+        .wl-mockup-dot {
+            width: 14px; height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Sector cards */
+        .sector-card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-glass);
+            transition: all var(--transition-slow);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sector-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .sector-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-glass-hover);
+        }
+
+        .sector-card:hover::after { opacity: 1; }
+
+        .sector-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+            transition: transform var(--transition-bounce);
+        }
+
+        .sector-card:hover .sector-icon {
+            transform: scale(1.2) rotate(-8deg);
+        }
+
+        /* Marketplace flow */
+        .plugin-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+            margin: var(--spacing-xl) 0;
+        }
+
+        .plugin-flow-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: var(--spacing-md);
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            min-width: 140px;
+            transition: all var(--transition-base);
+        }
+
+        .plugin-flow-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .plugin-flow-arrow {
+            font-size: 1.5rem;
+            color: var(--color-primary-500);
+            font-weight: 700;
+        }
+
+        /* Stat highlight */
+        .stat-highlight {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .stat-highlight .stat-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-highlight .stat-label {
+            font-size: 0.95rem;
+            color: var(--color-gray-600);
+            font-weight: 500;
+        }
+
+        /* Badge */
+        .dealer-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: var(--radius-full);
+            color: var(--color-primary-700);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Dealer contact form */
+        .dealer-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+
+        @media (max-width: 640px) {
+            .dealer-form-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="companionship.html" class="nav-link">Companionship</a></li>
+                    <li><a href="health-management.html" class="nav-link">Health Management</a></li>
+                    <li><a href="emergencies.html" class="nav-link">Emergencies</a></li>
+                    <li><a href="security.html" class="nav-link">Security</a></li>
+                    <li><a href="partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="dealers.html" class="nav-link">Dealers</a></li>
+                    <li><a href="#dealer-contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Become a Dealer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero dealers-hero">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <div class="dealer-badge"
+                    style="color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25);">
+                    🏪 Dealer Programme
+                </div>
+                <h1>Sell the AI Platform<br>No One Else Has</h1>
+                <p style="max-width: 850px; margin-left: auto; margin-right: auto;">
+                    Become a Teiker Dealer and offer your clients a genuinely unique product.
+                    White-label it as your own, tailor the AI assistant to any business sector,
+                    and open a new revenue stream through the plugin marketplace.
+                </p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💎</div>
+                        <p style="margin: 0; font-weight: 700; color: white;">Unique Product</p>
+                        <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Nothing like it on the market</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🏷️</div>
+                        <p style="margin: 0; font-weight: 700; color: white;">White Label</p>
+                        <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Sell under your own brand</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🧩</div>
+                        <p style="margin: 0; font-weight: 700; color: white;">Plugin Marketplace</p>
+                        <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Buy, sell &amp; monetise</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#advantages" class="btn btn-primary">See the Benefits</a>
+                    <a href="#dealer-contact" class="btn btn-outline">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: ADVANTAGES -->
+    <section class="section" id="advantages" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Why Become a Teiker Dealer?</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Four powerful advantages that let you stand out from competitors, build lasting client relationships,
+                and grow a sustainable business with Teiker at its core.
+            </p>
+
+            <div style="display: grid; gap: var(--spacing-lg); max-width: 900px; margin: 0 auto;">
+
+                <!-- 1. Unique Product -->
+                <div class="advantage-item">
+                    <div class="advantage-number">1</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">A Truly Unique Product</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">
+                            Teiker is a first-of-its-kind AI companion platform for connected devices. There is no
+                            direct equivalent on the market, which means you walk into every sales conversation with
+                            something clients cannot find elsewhere — a genuine competitive edge that is yours alone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. White Label -->
+                <div class="advantage-item">
+                    <div class="advantage-number">2</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Full White-Label Freedom</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">
+                            Present Teiker entirely under your own brand. Custom logo, domain, colour palette, UI skin,
+                            app name — every touchpoint reflects your identity. Your clients see your product;
+                            Teiker powers it invisibly behind the scenes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Customisable AI -->
+                <div class="advantage-item">
+                    <div class="advantage-number">3</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Fully Customisable AI for Any Business</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">
+                            The Teiker AI assistant adapts to any sector — retail, hospitality, healthcare, education,
+                            logistics and more. Configure its personality, language, knowledge base and capabilities
+                            to perfectly match each client's needs. One platform, infinite applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Plugin Marketplace -->
+                <div class="advantage-item">
+                    <div class="advantage-number">4</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-800);">Plugin Marketplace — Buy &amp; Sell</h4>
+                        <p style="color: var(--color-gray-600); margin: 0;">
+                            Access a growing catalogue of ready-made plugins to enrich your clients' assistants instantly.
+                            If you develop your own, publish them on the marketplace and earn recurring revenue
+                            from every dealer and user in the Teiker ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats bar -->
+            <div class="glass-card mt-xl" style="background: white; padding: var(--spacing-md);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-md);">
+                    <div class="stat-highlight">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Platform Like It</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">White-Label Ready</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Business Sectors</div>
+                    </div>
+                    <div class="stat-highlight">
+                        <div class="stat-number">+💰</div>
+                        <div class="stat-label">Marketplace Income</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: WHITE LABEL -->
+    <section class="section" id="white-label">
+        <div class="container">
+            <h2 class="text-center mb-md">Your Brand. Our Technology.</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Every element of the platform — from the splash screen to the notification emails — can carry
+                your branding. We disappear completely. Your brand shines.
+            </p>
+
+            <div class="pillar-grid">
+                <div>
+                    <div class="dealer-badge">🏷️ White-Label Customisation</div>
+                    <h3 style="margin-bottom: var(--spacing-md);">Everything is yours to customise</h3>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-lg);">
+                        No coding required. Change any visual or behavioural aspect of the platform through a
+                        straightforward configuration panel. Publish changes instantly to all your clients.
+                    </p>
+                    <div class="custom-pills-grid">
+                        <span class="custom-pill">🎨 Logo &amp; Branding</span>
+                        <span class="custom-pill">🌐 Custom Domain</span>
+                        <span class="custom-pill">🎭 Colour Palette</span>
+                        <span class="custom-pill">✨ UI Skin &amp; Theme</span>
+                        <span class="custom-pill">📧 Email Templates</span>
+                        <span class="custom-pill">📱 App Icon &amp; Name</span>
+                        <span class="custom-pill">🗣️ Voice &amp; Personality</span>
+                        <span class="custom-pill">🌍 Language Packs</span>
+                        <span class="custom-pill">📄 Custom Landing Pages</span>
+                        <span class="custom-pill">📊 Branded Dashboard</span>
+                    </div>
+                </div>
+
+                <!-- Mockup -->
+                <div class="wl-mockup">
+                    <h4 style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--spacing-lg);">
+                        White-Label Configuration
+                    </h4>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #f59e0b;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Logo</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">YourBrand™ logo uploaded ✓</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #3b82f6;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Domain</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">assistant.yourbrand.com</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #10b981;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Colour Palette</p>
+                            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #3b82f6; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #10b981; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #f59e0b; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <div style="width: 20px; height: 20px; border-radius: 4px; background: #ef4444; border: 2px solid rgba(255,255,255,0.3);"></div>
+                                <p style="color: white; font-weight: 600; margin: 0; font-size: 0.85rem;">Custom ✓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #ec4899;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">Skin</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">Modern Light applied ✓</p>
+                        </div>
+                    </div>
+                    <div class="wl-mockup-row">
+                        <div class="wl-mockup-dot" style="background: #8b5cf6;"></div>
+                        <div>
+                            <p style="color: rgba(255,255,255,0.5); font-size: 0.75rem; margin: 0;">AI Persona</p>
+                            <p style="color: white; font-weight: 600; margin: 0; font-size: 0.95rem;">Custom persona – "Aria" ✓</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: var(--spacing-lg); padding: 0.75rem; background: rgba(139,92,246,0.2); border-radius: var(--radius-md); text-align: center;">
+                        <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.85rem;">
+                            ✨ All changes publish instantly — no coding required
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: AI FOR ANY SECTOR -->
+    <section class="section" id="sectors" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">One AI. Every Business Sector.</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Thanks to Teiker's plugin architecture, the AI assistant can be configured for virtually any industry.
+                Sell the same powerful platform to radically different clients — each one sees a tailor-made solution.
+            </p>
+
+            <div class="grid-3 mb-xl" style="gap: var(--spacing-lg);">
+                <div class="sector-card">
+                    <div class="sector-icon">🛒</div>
+                    <h4 style="margin-bottom: 0.5rem;">Retail &amp; E-commerce</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Product recommendations, order tracking, loyalty programmes and 24/7 customer support.
+                    </p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🏥</div>
+                    <h4 style="margin-bottom: 0.5rem;">Healthcare</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Appointment scheduling, medication reminders, patient follow-ups and symptom triage.
+                    </p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🏨</div>
+                    <h4 style="margin-bottom: 0.5rem;">Hospitality</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Concierge services, room requests, local recommendations and seamless check-in flows.
+                    </p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🎓</div>
+                    <h4 style="margin-bottom: 0.5rem;">Education</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Personalised tutoring, quiz generation, course navigation and progress tracking.
+                    </p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🏠</div>
+                    <h4 style="margin-bottom: 0.5rem;">Property &amp; Real Estate</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Tenant queries, maintenance requests, smart home control and visitor management.
+                    </p>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-icon">🏭</div>
+                    <h4 style="margin-bottom: 0.5rem;">Industry &amp; Logistics</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem; margin: 0;">
+                        Fleet monitoring, shift management, incident reporting and supply chain alerts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                <div class="pillar-grid">
+                    <div>
+                        <div class="dealer-badge">🧩 Plugin-Based Architecture</div>
+                        <h3 style="margin-bottom: var(--spacing-md);">Configure, don't code</h3>
+                        <p style="color: var(--color-gray-600);">
+                            Each AI assistant is built by combining plugins — modular blocks of capability.
+                            Need calendar integration? Add it. Need payments? Add that too.
+                            No AI expertise required — just select, configure and deploy.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-top: var(--spacing-md);">
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Combine any number of plugins
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Voice, text or multimodal interaction
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Train with client-specific knowledge
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; gap: 0.5rem; color: var(--color-gray-700);">
+                                <span style="color: var(--color-primary-500);">✓</span> Deploy in minutes, not months
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div style="background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100)); border-radius: var(--radius-xl); padding: var(--spacing-xl);">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-sm);">
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📞</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Calls</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📊</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Analytics</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">💳</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Payments</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">📅</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Calendar</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">🗄️</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">CRM</p>
+                                </div>
+                                <div style="background: white; padding: 1rem; border-radius: var(--radius-md); text-align: center; box-shadow: var(--shadow-sm);">
+                                    <div style="font-size: 1.5rem;">➕</div>
+                                    <p style="font-size: 0.8rem; font-weight: 600; margin: 0.25rem 0 0; color: var(--color-gray-700);">Your Plugin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PLUGIN MARKETPLACE -->
+    <section class="section" id="marketplace">
+        <div class="container">
+            <h2 class="text-center mb-md">The Plugin Marketplace</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                As a dealer you have full access to the Teiker Plugin Marketplace — a curated catalogue of
+                extensions you can <strong>buy to enrich your clients' assistants</strong> or
+                <strong>sell to earn recurring revenue</strong> from the entire network.
+            </p>
+
+            <!-- Flow -->
+            <div class="plugin-flow">
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">🔍</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Browse</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Explore plugins</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">🛒</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Buy</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Instant activation</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step">
+                    <div style="font-size: 2rem;">⚙️</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: var(--color-gray-800);">Configure</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: var(--color-gray-500);">Tailor to client</p>
+                </div>
+                <span class="plugin-flow-arrow">→</span>
+                <div class="plugin-flow-step" style="background: var(--gradient-primary); color: white;">
+                    <div style="font-size: 2rem;">🚀</div>
+                    <p style="font-weight: 700; margin: 0; font-size: 0.85rem; color: white;">Deploy</p>
+                    <p style="margin: 0; font-size: 0.75rem; color: rgba(255,255,255,0.8);">Impress your client</p>
+                </div>
+            </div>
+
+            <div class="pillar-grid">
+                <div class="glass-card" style="background: white;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">🛍️</div>
+                    <h4 style="margin-bottom: var(--spacing-md); color: var(--color-primary-800);">Buy Plugins</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">
+                        Choose from a growing catalogue of certified plugins and add powerful capabilities
+                        to any client's assistant without writing a single line of code.
+                    </p>
+                    <ul class="check-list">
+                        <li>Hundreds of ready-to-use extensions</li>
+                        <li>One-click install &amp; configuration</li>
+                        <li>Certified for quality &amp; security</li>
+                        <li>Flat-fee or subscription pricing</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card" style="background: white;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">💰</div>
+                    <h4 style="margin-bottom: var(--spacing-md); color: var(--color-primary-800);">Sell Plugins</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">
+                        Have a plugin idea that solves a real problem? Build it, publish it on the Teiker
+                        Marketplace, and earn recurring revenue from every dealer and user in the ecosystem.
+                    </p>
+                    <ul class="check-list">
+                        <li>Reach the entire Teiker dealer network</li>
+                        <li>Automated billing &amp; revenue sharing</li>
+                        <li>Ratings, reviews &amp; analytics dashboard</li>
+                        <li>Marketing exposure through Teiker channels</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT FORM -->
+    <section class="section" id="dealer-contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container">
+            <h2 class="text-center" style="color: white; margin-bottom: var(--spacing-md);">Ready to Become a Dealer?</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 700px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9); font-size: 1.25rem;">
+                Fill out the form below and our dealer team will get back to you within 24 hours.
+            </p>
+
+            <div class="glass-card-dark" style="max-width: 750px; margin: 0 auto; padding: var(--spacing-xl);">
+                <h3 style="margin-bottom: var(--spacing-lg); color: white; text-align: center;">Dealer Application</h3>
+                <form id="dealer-contact-form" action="https://formspree.io/f/xgopjvon" method="POST"
+                    style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+
+                    <div class="dealer-form-grid">
+                        <div>
+                            <label for="dealer-name"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Full Name *
+                            </label>
+                            <input id="dealer-name" type="text" name="name" placeholder="John Smith" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="dealer-company"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Company *
+                            </label>
+                            <input id="dealer-company" type="text" name="company" placeholder="Acme Corporation" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div class="dealer-form-grid">
+                        <div>
+                            <label for="dealer-country"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Country *
+                            </label>
+                            <input id="dealer-country" type="text" name="country" placeholder="United Kingdom" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="dealer-phone"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Phone *
+                            </label>
+                            <input id="dealer-phone" type="tel" name="phone" placeholder="+44 20 1234 5678" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div class="dealer-form-grid">
+                        <div>
+                            <label for="dealer-email"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Email *
+                            </label>
+                            <input id="dealer-email" type="email" name="email" placeholder="john@acme.com" required
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                        <div>
+                            <label for="dealer-url"
+                                style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                                Website URL
+                            </label>
+                            <input id="dealer-url" type="url" name="url" placeholder="https://www.acme.com"
+                                style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="dealer-observations"
+                            style="display: block; margin-bottom: 0.4rem; font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 500;">
+                            Target market &amp; how you plan to use Teiker
+                        </label>
+                        <textarea id="dealer-observations" name="observations"
+                            placeholder="Tell us about your business, the sectors you operate in, and how you'd like to deploy Teiker for your clients..."
+                            style="padding: 1rem; border-radius: var(--radius-md); border: 2px solid var(--color-primary-200); font-size: 1rem; resize: vertical; min-height: 120px; font-family: inherit;"
+                            rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" id="dealer-submit" class="btn btn-primary"
+                        style="width: 100%; font-size: 1.25rem; padding: 1.25rem;">Apply to Become a Dealer</button>
+                    <p id="dealer-feedback"
+                        style="font-size: 0.875rem; color: rgba(255,255,255,0.8); margin: 0; min-height: 1.25em; text-align: center;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Teiker</h4>
+                    <p>Teiker is a first-of-its-kind AI companion platform that dealers can white-label, customise and
+                        deploy across any business sector worldwide.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="companionship.html" class="footer-link">Companionship</a>
+                    <a href="health-management.html" class="footer-link">Health Management</a>
+                    <a href="emergencies.html" class="footer-link">Emergencies</a>
+                    <a href="security.html" class="footer-link">Security</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Dealers</h4>
+                    <a href="#advantages" class="footer-link">Dealer Benefits</a>
+                    <a href="#white-label" class="footer-link">White Label</a>
+                    <a href="#marketplace" class="footer-link">Plugin Marketplace</a>
+                    <a href="#dealer-contact" class="footer-link">Apply Now</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>🌐 Language</h4>
+                    <a href="https://www.teiker.online/dealers.html" class="footer-link lang-active">English</a>
+                    <a href="https://www.teiker.online/es/distribuidores.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/it/rivenditori.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/pt/distribuidores.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/revendeurs.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/de/haendler.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/dilery.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dealerForm = document.getElementById('dealer-contact-form');
+            if (dealerForm) {
+                const submitBtn = document.getElementById('dealer-submit');
+                const feedback = document.getElementById('dealer-feedback');
+
+                dealerForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const formData = new FormData(dealerForm);
+                    const payload = Object.fromEntries(formData.entries());
+
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    feedback.style.color = 'rgba(255,255,255,0.8)';
+                    feedback.textContent = '';
+
+                    try {
+                        const response = await fetch('https://formspree.io/f/xgopjvon', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (response.ok) {
+                            feedback.style.color = 'rgba(150,255,180,0.95)';
+                            feedback.textContent = '✓ Application submitted successfully! We will contact you within 24 hours.';
+                            dealerForm.reset();
+                        } else {
+                            feedback.style.color = 'rgba(255,180,150,0.95)';
+                            feedback.textContent = 'An error occurred. Please try again.';
+                        }
+                    } catch (_) {
+                        feedback.style.color = 'rgba(255,180,150,0.95)';
+                        feedback.textContent = 'Could not connect to the server. Please try again later.';
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Apply to Become a Dealer';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

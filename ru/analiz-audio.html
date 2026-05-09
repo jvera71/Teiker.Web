@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Teiker слушает, чтобы вам не приходилось. Аудиоанализ записывает, транскрибирует и отслеживает разговоры дома — и предупреждает вас, если сказано что-то неуместное.">
+    <title>Аудиоанализ – Знайте, о чем говорят дома | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/audio-analysis.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/audio-analysis.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/analisis-audio.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/analise-audio.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/analyse-audio.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/analisi-audio.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/audioanalyse.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/analiz-audio.html">
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/ru/analiz-audio.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="soprovozhdenie.html" class="nav-link">Сопровождение</a></li>
+                    <li><a href="upravlenie-zdoroviem.html" class="nav-link">Здоровье</a></li>
+                    <li><a href="ekstrennye-situatsii.html" class="nav-link">Экстренные случаи</a></li>
+                    <li><a href="bezopasnost.html" class="nav-link">Безопасность</a></li>
+                    <li><a href="partnery.html" class="nav-link">Партнеры</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Связаться</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #7c2d12 0%, #c2410c 50%, #fb923c 100%);">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1>Знайте, о чем говорят.</h1>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Teiker может слушать в выбранные вами часы — во время визитов сиделок, утренних процедур или в любое другое время. Разговоры транскрибируются, говорящие опознаются, и <strong>вы получаете мгновенный сигнал, если сказано что-то неуместное</strong>. Незаметно. Автоматически. Всегда на ваших условиях.</p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🎙️ Полные</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Стенограммы разговоров</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🗓️ Гибкий</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">График и часы работы</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🚨 Сразу</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Сигнал о нарушениях</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#modes" class="btn btn-primary">Как это работает</a>
+                    <a href="#contact" class="btn btn-outline">Консультация</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Слова имеют значение. Особенно когда вас нет рядом.</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Большая часть того, что происходит в доме, — это общение. То, как сиделка разговаривает с вашим близким, какие темы поднимаются, соблюдается ли уважительный тон — все это невозможно узнать, не находясь рядом. До сегодняшнего дня.
+            </p>
+            <div class="grid-3 mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">😔</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Словесное насилие трудно заметить</h4>
+                    <p style="color: var(--color-gray-600);">Повышенные тона, унизительные комментарии, угрозы — ваш близкий может не рассказать об этом из-за страха, стыда или желания не беспокоить вас.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">💶</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Финансовое давление и манипуляции</h4>
+                    <p style="color: var(--color-gray-600);">Разговоры о деньгах, завещании, подарках или имуществе могут быть тревожными знаками. Если кто-то давит на вашего близкого, вы должны об этом знать.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🤐</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Вам рассказывают не всё</h4>
+                    <p style="color: var(--color-gray-600);">Близкие часто принижают серьезность ситуации, чтобы защитить вас, или просто забывают детали. Аудиоанализ дает вам независимую и объективную запись.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary-800);">Teiker слушает объективно, исключая человеческий фактор.</p>
+                <p style="font-size: 1.125rem; color: var(--color-gray-700); max-width: 800px; margin: 0 auto;">
+                    Вы определяете, что вас беспокоит. Teiker следит за этим — и предупреждает вас в тот момент, когда слышит что-то подобное.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THREE MODES -->
+    <section class="section" id="modes">
+        <div class="container">
+            <h2 class="text-center mb-md">Три уровня аудиомониторинга</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.1rem; color: var(--color-gray-600);">
+                Выберите уровень детализации, подходящий для вашей ситуации. Режимы независимы — их можно сочетать или переключать в любое время.
+            </p>
+
+            <!-- Mode 1: Transcript -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        1</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🎙️ СТЕНОГРАММА РАЗГОВОРА</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Письменная запись всего сказанного</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">В настроенное время Teiker записывает аудио и преобразует его в читаемый текст. Вы можете просмотреть его когда угодно — это полное документальное подтверждение происходящего дома.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">📄 <strong>Полный лог</strong> всего, что было сказано в активные часы.</li>
+                            <li style="margin-bottom: 0.5rem;">🔍 <strong>Поиск:</strong> находите конкретные слова или темы за секунды.</li>
+                            <li style="margin-bottom: 0.5rem;">🕐 <strong>Метки времени:</strong> знайте точно, когда была произнесена та или иная фраза.</li>
+                            <li style="margin-bottom: 0.5rem;">📱 <strong>Всегда под рукой</strong> в приложении на любом устройстве.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA; font-family: var(--font-primary);">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Пример стенограммы</h5>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:14</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Доброе утро, Мария Ивановна! Как спалось? Давайте я помогу вам встать."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:15</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Хорошо спала, спасибо. Колено только немного ноет сегодня."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:22</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Скажите, если что-то понадобится. Я начну готовить завтрак."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode 2: Diarization -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        2</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🗣️ АНАЛИЗ ДИАЛОГА</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Смотрите, кто и как долго говорил</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA;">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Пример: Утренний визит</h5>
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                    <span style="font-weight: 600; color: var(--color-gray-800); font-size: 0.9rem;">🔵 Собеседник А</span>
+                                    <span style="font-size: 0.8rem; color: var(--color-gray-500);">09:03 – 10:41</span>
+                                </div>
+                                <div style="background: #e0e7ff; height: 8px; border-radius: 99px; overflow: hidden;">
+                                    <div style="width: 42%; height: 100%; background: #4338ca; border-radius: 99px;"></div>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--color-gray-500);">42% времени разговора</span>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                    <span style="font-weight: 600; color: var(--color-gray-800); font-size: 0.9rem;">🟠 Собеседник Б</span>
+                                    <span style="font-size: 0.8rem; color: var(--color-gray-500);">09:03 – 10:41</span>
+                                </div>
+                                <div style="background: #ffedd5; height: 8px; border-radius: 99px; overflow: hidden;">
+                                    <div style="width: 58%; height: 100%; background: #c2410c; border-radius: 99px;"></div>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--color-gray-500);">58% времени разговора</span>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--color-gray-400); margin: var(--spacing-sm) 0 0; text-align: center;">Говорящие отмечены как А / Б, если не включено распознавание по именам.</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Помимо слов, анализ диалога показывает динамику общения. Без имен вы видите структуру беседы — была ли она сбалансированной? Доминировал ли кто-то один? Были ли долгие паузы?</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">👥 <strong>Разделение голосов</strong> происходит автоматически.</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Время речи каждого</strong> — быстрый индикатор вовлеченности в общение.</li>
+                            <li style="margin-bottom: 0.5rem;">🔕 <strong>Детектор тишины:</strong> знайте, когда общение прерывалось надолго.</li>
+                            <li style="margin-bottom: 0.5rem;">📋 <strong>Связь со стенограммой</strong> позволяет читать, кто и что говорил по очереди.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode 3: Speaker Recognition -->
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        3</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🪪 РАСПОЗНАВАНИЕ ПО ИМЕНАМ</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Знайте точно, кто и что произнес</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">С этой функцией Teiker идет дальше: он узнает голоса знакомых людей и подписывает их имена прямо в стенограмме. Вы не просто читаете текст — вы видите автора каждой фразы.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🎤 <strong>Регистрация голосов</strong> сиделок, родных и частых гостей.</li>
+                            <li style="margin-bottom: 0.5rem;">📛 <strong>Именная стенограмма:</strong> каждая строка привязана к конкретному человеку.</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ <strong>Сигнал о чужом голосе:</strong> если заговорит кто-то посторонний, вы узнаете об этом.</li>
+                            <li style="margin-bottom: 0.5rem;">🔗 <strong>Интеграция с приходами:</strong> текст и данные о присутствии создают полную картину дня.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA;">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Пример именной стенограммы</h5>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #4338ca; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Ольга · Сиделка</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:14</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Доброе утро, Мария Ивановна! Пойдемте на кухню."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #c2410c; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Мария Ивановна</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:15</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Спасибо, милая. Колено сегодня что-то разболелось."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #4338ca; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Ольга · Сиделка</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:15</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Я буду аккуратна. Не торопитесь."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="section" id="schedule" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Вы сами решаете, когда Teiker слушает</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Запись аудио не ведется постоянно. Вы настраиваете конкретные <strong>дни</strong> и <strong>часы</strong> работы — в остальное время ничего не записывается.
+            </p>
+            <div class="grid-2-columns-fixed mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🗓️ Выбор дней</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">Выберите дни недели для мониторинга. Например, только будни, когда приходит сиделка — и отключайте на выходные, когда семья рядом.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Пн</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Вт</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Ср</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Чт</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Пт</span>
+                        <span style="background: var(--color-gray-200); color: var(--color-gray-500); padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Сб</span>
+                        <span style="background: var(--color-gray-200); color: var(--color-gray-500); padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Вс</span>
+                    </div>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🕐 Окна записи</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">Задайте временные интервалы. Вне этих часов микрофон полностью неактивен. Можно настроить несколько окон в день.</p>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <div style="background: #FFF7ED; border: 1px solid #FED7AA; padding: 0.75rem; border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #7c2d12;">Утро</span>
+                            <span style="color: #9a3412; font-size: 0.95rem;">08:30 – 11:00</span>
+                        </div>
+                        <div style="background: #FFF7ED; border: 1px solid #FED7AA; padding: 0.75rem; border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #7c2d12;">Вечер</span>
+                            <span style="color: #9a3412; font-size: 0.95rem;">18:00 – 20:30</span>
+                        </div>
+                        <div style="background: var(--color-gray-100); padding: 0.75rem; border-radius: var(--radius-md);">
+                            <p style="margin: 0; font-size: 0.85rem; color: var(--color-gray-500);">🎤 В остальное время микрофон отключен.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: var(--color-primary-50); border: 1px solid var(--color-primary-100); padding: var(--spacing-lg); border-radius: var(--radius-xl); max-width: 800px; margin: 0 auto;">
+                <p style="color: var(--color-primary-800); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; text-align: center;">💡 Типовая настройка</p>
+                <p style="color: var(--color-primary-700); margin: 0; text-align: center;">Многие семьи включают аудио только на время визитов сиделок — утром и вечером по будням. Всё остальное время частная жизнь дома полностью защищена.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALERTS -->
+    <section class="section" id="alerts">
+        <div class="container">
+            <h2 class="text-center mb-md">Мгновенные оповещения о важном</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Вы сами определяете, чего не должно происходить в доме. Teiker следит — и сообщает вам в ту же секунду.
+            </p>
+
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🚫 Темы и поведение</h4>
+                        <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">В приложении укажите типы разговоров или действий, которые вызывают у вас опасения. Teiker будет мониторить их в активные часы.</p>
+                        <div style="display: grid; gap: var(--spacing-sm);">
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">🗣️</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Агрессия или неуважение</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Крики, оскорбления, угрожающий тон в адрес вашего близкого.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">💶</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Финансовые вопросы</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Любые упоминания денег, переводов, завещания, подарков или счетов.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">😨</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Признаки страха или боли</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Плач, крики о помощи или фразы, указывающие на небезопасность.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">🔒</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Ваши собственные темы</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Специфические фразы или слова, которые вас тревожат — добавьте их сами.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🚨 Что происходит при обнаружении</h4>
+                        <div style="display: grid; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg);">
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">1. Моментальное оповещение</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Push-уведомление приходит всем авторизованным членам семьи за считанные секунды.</p>
+                            </div>
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">2. Подсветка фрагмента текста</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Тот самый отрывок, вызвавший тревогу, будет помечен для быстрого прочтения.</p>
+                            </div>
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">3. Полный контекст</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Прочитайте диалог целиком (до и после), чтобы объективно оценить ситуацию.</p>
+                            </div>
+                        </div>
+                        <div class="glass-card" style="background: #FEF2F2; border: 1px solid #FECACA;">
+                            <p style="color: #991B1B; font-weight: 700; margin-bottom: 0.5rem;">⚠️ Пример уведомления</p>
+                            <p style="color: #7F1D1D; font-size: 0.9rem; margin-bottom: 0.35rem;"><strong>Обсуждение финансов</strong> — Вторник, 10:08</p>
+                            <p style="font-style: italic; color: #991B1B; font-size: 0.88rem; margin-bottom: 0.5rem;">"Тебе стоит переписать это на меня прямо сейчас — я позабочусь об этом лучше твоей дочери."</p>
+                            <p style="color: #7F1D1D; font-size: 0.8rem; margin: 0;">Спикер: Ольга (Сиделка) · Нажмите для полной записи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Выберите подходящий уровень</h2>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-glass);">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #7c2d12, #c2410c);">
+                            <th style="padding: 1.25rem 1.5rem; text-align: left; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">Функция</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🎙️ Стенограмма</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🗣️ Анализ</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🪪 С именами</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Текстовая запись всех бесед</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100); background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Разделение голосов</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Учет времени речи каждого</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100); background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Имена в стенограмме</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Тревога о чужом голосе</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Сигнал о нарушениях</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-xl">Часто задаваемые вопросы</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">Система слушает 24 часа в сутки?</p>
+                    <p class="faq-answer">Нет. Teiker работает только в те дни и часы, которые вы выбрали. В остальное время микрофон полностью отключен. Вы сохраняете контроль над приватностью.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Знают ли близкие, что аудио записывается?</p>
+                    <p class="faq-answer">Да, обязательно. Teiker работает открыто. Ваши близкие знают, когда запись активна, и могут попросить систему отключиться: "Teiker, мне нужна приватность". Запись тут же прекратится.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Где и как долго хранятся записи?</p>
+                    <p class="faq-answer">Все данные хранятся в зашифрованном виде и доступны только вам. Вы сами настраиваете срок хранения и можете удалить их в любой момент.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Услышит ли сиделка сигнал тревоги?</p>
+                    <p class="faq-answer">Нет. Оповещения приходят бесшумно на устройства семьи. Находящийся в доме человек не узнает о том, что система сработала.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Что если Teiker ошибочно сообщит о чем-то нормальном?</p>
+                    <p class="faq-answer">Вы можете отклонить любое уведомление и пометить его как ложное. Teiker учится на вашей обратной связи, чтобы в будущем быть точнее.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Знайте, что происходит. Берегите то, что важно.</h2>
+            <h3 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: var(--spacing-xl);">Полные стенограммы. Узнавание голосов. Мгновенные сигналы о нарушениях.</h3>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="font-size: 1.25rem; padding: 1.25rem;">Запросить информацию</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О Teiker</h4>
+                    <p>Teiker родился из реальной потребности заботиться о наших старших, не лишая их независимости.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <a href="index.html" class="footer-link">Главная</a>
+                    <a href="soprovozhdenie.html" class="footer-link">Сопровождение</a>
+                    <a href="upravlenie-zdoroviem.html" class="footer-link">Здоровье</a>
+                    <a href="ekstrennye-situatsii.html" class="footer-link">Экстренные случаи</a>
+                    <a href="bezopasnost.html" class="footer-link">Безопасность</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Язык</h4>
+                    <a href="https://www.teiker.online/audio-analysis.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/analisis-audio.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/analise-audio.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/analyse-audio.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/analisi-audio.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/audioanalyse.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/analiz-audio.html" class="footer-link lang-active">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>

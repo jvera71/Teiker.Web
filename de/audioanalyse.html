@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Teiker hört zu, damit Sie es nicht tun müssen. Die Audioanalyse erfasst, transkribiert und überwacht Gespräche zu Hause – und alarmiert Sie, wenn etwas Unangemessenes gesagt wird.">
+    <title>Audioanalyse – Wissen, was zu Hause gesprochen wird | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/audio-analysis.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/audio-analysis.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/analisis-audio.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/analise-audio.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/analyse-audio.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/analisi-audio.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/audioanalyse.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/analiz-audio.html">
+    <!-- Google Fonts Preconnect and Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.teiker.online/de/audioanalyse.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="begleitung.html" class="nav-link">Begleitung</a></li>
+                    <li><a href="gesundheitsmanagement.html" class="nav-link">Gesundheit</a></li>
+                    <li><a href="notfaelle.html" class="nav-link">Notfälle</a></li>
+                    <li><a href="sicherheit.html" class="nav-link">Sicherheit</a></li>
+                    <li><a href="partner.html" class="nav-link">Partner</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #7c2d12 0%, #c2410c 50%, #fb923c 100%);">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1>Wissen, was gesprochen wird.</h1>
+                <p style="max-width: 900px; margin-left: auto; margin-right: auto;">Teiker kann während der von Ihnen gewählten Zeiten zuhören — bei Pflegebesuchen, morgendlichen Routinen oder jedem anderen Zeitfenster. Gespräche werden transkribiert, Sprecher identifiziert, und <strong>Sie werden sofort alarmiert, wenn etwas Unangemessenes gesagt wird</strong>. Diskret. Automatisch. Immer zu Ihren Bedingungen.</p>
+                <div class="grid-3" style="max-width: 900px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🎙️ Vollständig</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Gesprächsprotokolle</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🗓️ Individuell</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Zeitplan & Stunden</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 900; color: white; margin-bottom: 0.5rem;">🚨 Sofort</div>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.9);">Alarm bei Unangemessenem</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#modes" class="btn btn-primary">Wie es funktioniert</a>
+                    <a href="#contact" class="btn btn-outline">Berater kontaktieren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Worte zählen. Besonders wenn Sie nicht da sind.</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Das meiste, was in einem Zuhause passiert, geschieht im Gespräch. Wie eine Pflegekraft mit Ihren Liebsten spricht, welche Themen angesprochen werden, ob der Ton respektvoll ist — das alles lässt sich kaum wissen, ohne selbst dabei zu sein. Bis jetzt.
+            </p>
+            <div class="grid-3 mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">😔</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Verbale Misshandlung ist schwer zu erkennen</h4>
+                    <p style="color: var(--color-gray-600);">Erhobene Stimmen, herabwürdigende Kommentare, drohende Sprache — Ihre Angehörigen berichten es vielleicht nicht, aus Angst, Scham oder um Sie nicht zu beunruhigen.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">💶</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Finanzieller Druck und Manipulation</h4>
+                    <p style="color: var(--color-gray-600);">Gespräche über Geld, Testamente, Geschenke oder Eigentum können Warnsignale sein. Wenn jemand Druck ausübt, müssen Sie es wissen.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🤐</div>
+                    <h4 class="mb-md" style="color: var(--color-primary-700);">Man erzählt Ihnen nicht immer alles</h4>
+                    <p style="color: var(--color-gray-600);">Angehörige spielen Situationen oft herunter, um Sie zu schützen, oder vergessen sie einfach. Die Audioanalyse gibt Ihnen eine unabhängige, objektive Aufzeichnung.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <p style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary-800);">Teiker hört objektiv zu, ohne Raum für Erinnerungslücken.</p>
+                <p style="font-size: 1.125rem; color: var(--color-gray-700); max-width: 800px; margin: 0 auto;">
+                    Sie definieren, was Sie beunruhigt. Teiker achtet darauf — und alarmiert Sie in dem Moment, in dem es etwas Entsprechendes hört.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THREE MODES -->
+    <section class="section" id="modes">
+        <div class="container">
+            <h2 class="text-center mb-md">Drei Stufen der Audioanalyse</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.1rem; color: var(--color-gray-600);">
+                Wählen Sie den Detailgrad, der zu Ihrer Situation passt. Jeder Modus ist unabhängig — Sie können sie kombinieren oder jederzeit wechseln.
+            </p>
+
+            <!-- Mode 1: Transcript -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        1</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🎙️ GESPRÄCHSPROTOKOLL</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Eine schriftliche Aufzeichnung dessen, was gesagt wurde</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Während der konfigurierten Zeiten erfasst Teiker Audio und wandelt es in ein lesbares Textprotokoll um. Sie können es jederzeit einsehen — ein vollständiger, zeitgestempelter Beleg der Gespräche im Haus.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">📄 <strong>Vollständiges Protokoll</strong> von allem, was während der aktiven Stunden gesagt wurde.</li>
+                            <li style="margin-bottom: 0.5rem;">🔍 <strong>Durchsuchbar:</strong> Suchen Sie in Sekunden nach einem bestimmten Wort oder Thema.</li>
+                            <li style="margin-bottom: 0.5rem;">🕐 <strong>Zeitstempel:</strong> Wissen Sie genau, wann etwas gesagt wurde.</li>
+                            <li style="margin-bottom: 0.5rem;">📱 <strong>Jederzeit zugänglich</strong> über die App, auf jedem Gerät.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA; font-family: var(--font-primary);">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Beispiel: Protokollauszug</h5>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:14 Uhr</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Guten Morgen Margarete, wie haben Sie geschlafen? Lassen Sie mich Ihnen beim Aufstehen helfen."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:15 Uhr</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Ich habe ganz gut geschlafen, danke. Mein Knie schmerzt heute Morgen ein wenig."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <span style="font-size: 0.75rem; color: var(--color-gray-400); display: block; margin-bottom: 0.25rem;">09:22 Uhr</span>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Sagen Sie Bescheid, wenn Sie etwas brauchen. Ich fange schon mal mit dem Frühstück an."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode 2: Diarization -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        2</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🗣️ GESPRÄCHSANALYSE</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Sehen Sie, wer gesprochen hat und wie lange</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA;">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Beispiel: Vormittagsbesuch</h5>
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                    <span style="font-weight: 600; color: var(--color-gray-800); font-size: 0.9rem;">🔵 Person A</span>
+                                    <span style="font-size: 0.8rem; color: var(--color-gray-500);">09:03 – 10:41 Uhr</span>
+                                </div>
+                                <div style="background: #e0e7ff; height: 8px; border-radius: 99px; overflow: hidden;">
+                                    <div style="width: 42%; height: 100%; background: #4338ca; border-radius: 99px;"></div>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--color-gray-500);">42% Redeanteil</span>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                    <span style="font-weight: 600; color: var(--color-gray-800); font-size: 0.9rem;">🟠 Person B</span>
+                                    <span style="font-size: 0.8rem; color: var(--color-gray-500);">09:03 – 10:41 Uhr</span>
+                                </div>
+                                <div style="background: #ffedd5; height: 8px; border-radius: 99px; overflow: hidden;">
+                                    <div style="width: 58%; height: 100%; background: #c2410c; border-radius: 99px;"></div>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--color-gray-500);">58% Redeanteil</span>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--color-gray-400); margin: var(--spacing-sm) 0 0; text-align: center;">Sprecher werden als Person A / B angezeigt, außer die Spracherkennung ist aktiv.</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Neben den Worten zeigt die Gesprächsanalyse, <em>wer</em> gesprochen hat und wie lange. Ohne wissen zu müssen, wer wer ist, sehen Sie die Dynamik — war es ausgewogen? Hat eine Person dominiert? Gab es langes Schweigen?</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">👥 <strong>Mehrere Sprecher</strong> werden automatisch identifiziert und getrennt.</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Redezeit pro Person</strong> — ein schneller Indikator für die Gesprächsbalance.</li>
+                            <li style="margin-bottom: 0.5rem;">🔕 <strong>Stille-Erkennung:</strong> Wissen Sie, wenn es ungewöhnlich lange Pausen gab.</li>
+                            <li style="margin-bottom: 0.5rem;">📋 <strong>Kombiniert mit dem Protokoll</strong>, damit Sie lesen können, wer was nacheinander gesagt hat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode 3: Speaker Recognition -->
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl);">
+                <div
+                    style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #c2410c, #fb923c); color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 900; flex-shrink: 0;">
+                        3</div>
+                    <div>
+                        <h3 style="color: #7c2d12; margin: 0;">🪪 NAMENSBASIERTE SPRACHERKENNUNG</h3>
+                        <p style="color: #9a3412; margin: 0; font-size: 0.95rem;">Wissen Sie genau, wer was gesagt hat</p>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p style="color: var(--color-gray-700); font-size: 1.1rem; margin-bottom: 1rem;">Wenn die Spracherkennung aktiv ist, geht Teiker einen Schritt weiter: Es erkennt die Stimme jeder bekannten Person und ordnet ihren Namen direkt jeder Zeile im Protokoll zu. Sie wissen nicht nur, was gesagt wurde — Sie wissen genau, wer es gesagt hat.</p>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🎤 <strong>Stimmen registriert</strong> für Pflegekräfte, Familienmitglieder und regelmäßige Besucher.</li>
+                            <li style="margin-bottom: 0.5rem;">📛 <strong>Benanntes Protokoll:</strong> Jede Zeile ist klar der sprechenden Person zugeordnet.</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ <strong>Alarm bei unbekannter Stimme:</strong> Wenn eine nicht registrierte Stimme spricht, werden Sie sofort benachrichtigt.</li>
+                            <li style="margin-bottom: 0.5rem;">🔗 <strong>Verknüpft mit Anwesenheit:</strong> Protokoll und Erkennung arbeiten für ein Gesamtbild zusammen.</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card"
+                        style="background: #FFF7ED; border: 1px solid #FED7AA;">
+                        <h5 style="color: #7c2d12; margin-bottom: var(--spacing-md);">Beispiel: Benanntes Protokoll</h5>
+                        <div style="display: grid; gap: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #4338ca; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Sandra · Pflege</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:14 Uhr</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Guten Morgen Margarete, ich helfe Ihnen in die Küche."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #c2410c; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Margarete</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:15 Uhr</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Danke, meine Liebe. Mein Knie schmerzt heute etwas."</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: var(--radius-sm);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                    <span style="background: #4338ca; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 99px;">Sandra · Pflege</span>
+                                    <span style="font-size: 0.75rem; color: var(--color-gray-400);">09:15 Uhr</span>
+                                </div>
+                                <p style="margin: 0; color: var(--color-gray-700); font-size: 0.9rem;">"Ich werde vorsichtig sein. Lassen Sie sich Zeit."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="section" id="schedule" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Sie entscheiden, wann Teiker zuhört</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Die Audioerfassung ist standardmäßig nicht dauerhaft aktiv. Sie konfigurieren genau, an <strong>welchen Tagen</strong> und zu <strong>welchen Stunden</strong> sie aktiv ist — nichts anderes wird aufgezeichnet.
+            </p>
+            <div class="grid-2-columns-fixed mb-xl">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🗓️ Tagesauswahl</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">Wählen Sie bestimmte Wochentage, an denen die Überwachung aktiv sein soll. Zum Beispiel nur an Werktagen, wenn die Pflegekraft kommt — und nicht am Wochenende, wenn die Familie da ist.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Mo</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Di</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Mi</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Do</span>
+                        <span style="background: #c2410c; color: white; padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Fr</span>
+                        <span style="background: var(--color-gray-200); color: var(--color-gray-500); padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">Sa</span>
+                        <span style="background: var(--color-gray-200); color: var(--color-gray-500); padding: 0.4rem 0.85rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">So</span>
+                    </div>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl);">
+                    <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🕐 Zeitfenster</h4>
+                    <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">Definieren Sie den Zeitraum, in dem Audio erfasst wird. Außerhalb dieser Stunden ist das Mikrofon komplett inaktiv. Sie können mehrere Fenster pro Tag festlegen.</p>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <div style="background: #FFF7ED; border: 1px solid #FED7AA; padding: 0.75rem; border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #7c2d12;">Vormittags</span>
+                            <span style="color: #9a3412; font-size: 0.95rem;">08:30 – 11:00</span>
+                        </div>
+                        <div style="background: #FFF7ED; border: 1px solid #FED7AA; padding: 0.75rem; border-radius: var(--radius-md); display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; color: #7c2d12;">Abends</span>
+                            <span style="color: #9a3412; font-size: 0.95rem;">18:00 – 20:30</span>
+                        </div>
+                        <div style="background: var(--color-gray-100); padding: 0.75rem; border-radius: var(--radius-md);">
+                            <p style="margin: 0; font-size: 0.85rem; color: var(--color-gray-500);">🎤 Mikrofon ist zu allen anderen Zeiten inaktiv.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: var(--color-primary-50); border: 1px solid var(--color-primary-100); padding: var(--spacing-lg); border-radius: var(--radius-xl); max-width: 800px; margin: 0 auto;">
+                <p style="color: var(--color-primary-800); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; text-align: center;">💡 Ein typisches Setup</p>
+                <p style="color: var(--color-primary-700); margin: 0; text-align: center;">Viele Familien aktivieren Audio nur während der bekannten Pflegebesuche — Montag bis Freitag, morgens und abends. Den Rest der Woche bleibt die Privatsphäre des Haushalts vollständig gewahrt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALERTS -->
+    <section class="section" id="alerts">
+        <div class="container">
+            <h2 class="text-center mb-md">Sofort-Alarme für das, was Ihnen wichtig ist</h2>
+            <p class="text-center mb-xl"
+                style="max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.25rem;">
+                Sie definieren, was im Haus Ihrer Angehörigen niemals passieren sollte. Teiker achtet darauf — und alarmiert Sie sofort, wenn es erkannt wird.
+            </p>
+
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl);">
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🚫 Themen und Verhaltensweisen</h4>
+                        <p style="color: var(--color-gray-600); margin-bottom: var(--spacing-md);">Definieren Sie über die App, welche Arten von Gesprächen oder Verhalten Sie beunruhigen. Teiker überwacht diese kontinuierlich während der aktiven Stunden.</p>
+                        <div style="display: grid; gap: var(--spacing-sm);">
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">🗣️</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Aggressiver oder respektloser Ton</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Erhobene Stimmen, Beleidigungen, drohende Sprache gegenüber Ihren Angehörigen.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">💶</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Finanzielle Gespräche</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Jede Erwähnung von Geld, Überweisungen, Testamenten, Geschenken oder Bankkonten.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">😨</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Anzeichen von Not oder Angst</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Angstbekundungen, Weinen, Hilferufe oder Hinweise auf Unsicherheit.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: start; gap: 0.75rem; background: #FEF2F2; padding: 0.75rem; border-radius: var(--radius-md);">
+                                <span style="font-size: 1.1rem; flex-shrink: 0;">🔒</span>
+                                <div>
+                                    <p style="font-weight: 600; color: #991B1B; margin-bottom: 0.2rem; font-size: 0.95rem;">Eigene Themen definieren</p>
+                                    <p style="color: #7F1D1D; font-size: 0.85rem; margin: 0;">Spezifische Sätze oder Schlüsselwörter, die Sie beunruhigen würden — direkt in der App hinzugefügt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--color-primary-800); margin-bottom: var(--spacing-md);">🚨 Was passiert bei einer Erkennung</h4>
+                        <div style="display: grid; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg);">
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">1. Sofort-Alarm an die Familie</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Eine Push-Benachrichtigung wird innerhalb von Sekunden an alle autorisierten Familienmitglieder gesendet.</p>
+                            </div>
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">2. Relevanter Ausschnitt markiert</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Die exakte Passage, die den Alarm ausgelöst hat, wird markiert, damit Sie sie sofort lesen können.</p>
+                            </div>
+                            <div style="background: var(--color-primary-50); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-400);">
+                                <p style="font-weight: 600; color: var(--color-primary-800); margin-bottom: 0.25rem;">3. Voller Kontext verfügbar</p>
+                                <p style="color: var(--color-primary-700); font-size: 0.9rem; margin: 0;">Lesen Sie das gesamte Gespräch davor und danach, um die Situation zu verstehen.</p>
+                            </div>
+                        </div>
+                        <div class="glass-card" style="background: #FEF2F2; border: 1px solid #FECACA;">
+                            <p style="color: #991B1B; font-weight: 700; margin-bottom: 0.5rem;">⚠️ Beispiel: Alarm</p>
+                            <p style="color: #7F1D1D; font-size: 0.9rem; margin-bottom: 0.35rem;"><strong>Finanzgespräch erkannt</strong> — Dienstag, 10:08 Uhr</p>
+                            <p style="font-style: italic; color: #991B1B; font-size: 0.88rem; margin-bottom: 0.5rem;">"Das solltest du mir jetzt überschreiben — ich kann mich viel besser darum kümmern als deine Tochter."</p>
+                            <p style="color: #7F1D1D; font-size: 0.8rem; margin: 0;">Sprecher: Sandra (Pflege) · Tippen für volles Protokoll.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-xl">Wählen Sie die passende Stufe</h2>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-glass);">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #7c2d12, #c2410c);">
+                            <th style="padding: 1.25rem 1.5rem; text-align: left; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">Funktion</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🎙️ Protokoll</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🗣️ Analyse</th>
+                            <th style="padding: 1.25rem 1.5rem; text-align: center; color: white; font-family: var(--font-display); font-weight: 700; font-size: 1rem;">🪪 Namenserkennung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Schriftlicher Beleg der Gespräche</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100); background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Sprecher einzeln identifiziert</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Redezeit pro Person</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100); background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Namen im Protokoll</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-100);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Alarm bei unbekannter Stimme</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">—</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                        <tr style="background: var(--color-gray-50);">
+                            <td style="padding: 1rem 1.5rem; color: var(--color-gray-700); font-weight: 500;">Alarm bei Unangemessenem</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; font-size: 1.25rem;">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-xl">Häufig gestellte Fragen</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">Wird rund um die Uhr zugehört?</p>
+                    <p class="faq-answer">Nein. Teiker erfasst Audio nur während der Tage und Stunden, die Sie explizit konfiguriert haben. Außerhalb dieser Fenster ist das Mikrofon komplett inaktiv. Sie behalten immer die Kontrolle darüber, wann zugehört wird.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Wissen meine Angehörigen, dass Audio aufgezeichnet wird?</p>
+                    <p class="faq-answer">Ja, immer. Teiker arbeitet mit voller Transparenz. Ihre Angehörigen wissen, wann die Audioerfassung aktiv ist, und können Teiker jederzeit bitten, sie zu unterbrechen: "Teiker, ich möchte etwas Privatsphäre." Das Mikrofon stoppt sofort.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Werden die Protokolle gespeichert? Wie lange?</p>
+                    <p class="faq-answer">Die Protokolle werden sicher und verschlüsselt gespeichert und sind nur für autorisierte Personen zugänglich. Sie können festlegen, wie lange sie aufbewahrt werden, und sie jederzeit löschen. Sie werden niemals an Dritte weitergegeben oder für andere Zwecke verwendet.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Hören Pflegekräfte oder Besucher den Alarm?</p>
+                    <p class="faq-answer">Nein. Alarme werden lautlos an die Geräte der Familie gesendet. Die Person im Haus wird nicht benachrichtigt, wenn ein Alarm ausgelöst wurde.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Was ist, wenn Teiker fälschlicherweise etwas meldet?</p>
+                    <p class="faq-answer">Sie können jeden Alarm ablehnen und als Fehlmeldung markieren. Teiker lernt aus Ihrem Feedback, um unnötige Alarme künftig zu reduzieren, während es bei echten Sorgen wachsam bleibt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Wissen, was gesprochen wird. Schützen, was zählt.</h2>
+            <h3 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: var(--spacing-xl);">Vollständige Protokolle. Benannte Sprecher. Sofort-Alarme bei Unangemessenem.</h3>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="font-size: 1.25rem; padding: 1.25rem;">Informationen anfordern</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Über Teiker</h4>
+                    <p>Teiker entstand aus dem echten Bedürfnis, unsere Älteren zu versorgen, ohne dass sie ihre Unabhängigkeit verlieren.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Produkt</h4>
+                    <a href="index.html" class="footer-link">Startseite</a>
+                    <a href="begleitung.html" class="footer-link">Begleitung</a>
+                    <a href="gesundheitsmanagement.html" class="footer-link">Gesundheit</a>
+                    <a href="notfaelle.html" class="footer-link">Notfälle</a>
+                    <a href="sicherheit.html" class="footer-link">Sicherheit</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                    <a href="#contact" class="footer-link">Kontakt</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Sprache</h4>
+                    <a href="https://www.teiker.online/audio-analysis.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/analisis-audio.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/analise-audio.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/analyse-audio.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/analisi-audio.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/audioanalyse.html" class="footer-link lang-active">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/analiz-audio.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>

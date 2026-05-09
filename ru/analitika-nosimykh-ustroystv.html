@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Teiker интегрируется на 100% с вашими умными часами или фитнес-браслетом. Откройте для себя 4 панели здоровья: ежедневная активность, анализ походки, жизненные показатели и физический профиль.">
+    <title>Аналитика носимых устройств – Ваше здоровье под контролем | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/wearables-insights.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/wearables-insights.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/metricas-de-wearables.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/metricas-de-wearables.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/analyses-wearables.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/analisi-wearable.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/wearable-analysen.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/analitika-nosimykh-ustroystv.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="canonical" href="https://www.teiker.online/ru/analitika-nosimykh-ustroystv.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="soprovozhdenie.html" class="nav-link">Сопровождение</a></li>
+                    <li><a href="upravlenie-zdoroviem.html" class="nav-link">Здоровье</a></li>
+                    <li><a href="ekstrennye-situatsii.html" class="nav-link">Экстренные ситуации</a></li>
+                    <li><a href="bezopasnost.html" class="nav-link">Безопасность</a></li>
+                    <li><a href="partnery.html" class="nav-link">Партнёры</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Связаться с нами</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0c1a2e 100%);">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1 style="color: white;">Ваш организм многое вам говорит.<br>Teiker переводит это на понятный язык.</h1>
+                <p style="max-width: 860px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.88);">
+                    Teiker подключается <strong style="color: white;">на 100% к вашим умным часам или фитнес-браслету</strong> и превращает «сырые» данные датчиков в четыре наглядные панели здоровья — чтобы вы всегда знали, что происходит в вашем теле.
+                </p>
+                <div class="grid-4" style="max-width: 960px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🏃‍♂️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Дневная активность<br>и энергия</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🚶‍♀️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Мобильность<br>и походка</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">❤️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Жизненные показатели<br>и восстановление</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">⚖️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Физический профиль<br>и окружающая среда</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#paneli" class="btn btn-primary">Изучить панели</a>
+                    <a href="upravlenie-zdoroviem.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">Управление здоровьем</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВСТУПЛЕНИЕ -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>То, что фиксирует ваш гаджет, — Teiker объяснит</h2>
+                <p style="max-width: 750px; margin: 0 auto; color: var(--color-gray-600); font-size: 1.1rem;">
+                    Большинство носимых устройств накапливают горы данных и оставляют вас в недоумении. Teiker берёт эти данные, даёт им контекст, выявляет тенденции и предупреждает вас — или вашу семью — когда что-то заслуживает внимания.
+                </p>
+            </div>
+            <div class="grid-3" style="gap: var(--spacing-md);">
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">📡</div>
+                    <h4 style="color: var(--color-primary-700);">Автоматическая синхронизация</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Устройство синхронизируется в фоновом режиме. Никаких ручных загрузок, никаких забываний. Ваши данные всегда актуальны.</p>
+                </div>
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🔍</div>
+                    <h4 style="color: var(--color-primary-700);">Объяснения простым языком</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Никаких непонятных цифр. Teiker объясняет каждый показатель понятными словами — что это такое, что он значит лично для вас и на что обращать внимание.</p>
+                </div>
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🔔</div>
+                    <h4 style="color: var(--color-primary-700);">Умные оповещения</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Teiker сообщает вам, когда показатель выходит за рамки вашей личной нормы, и при необходимости может оповестить родственников или сиделку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПАНЕЛИ -->
+    <section class="section" id="paneli">
+        <div class="container">
+            <h2 class="text-center mb-xl">Четыре панели — полная картина</h2>
+
+            <!-- ПАНЕЛЬ 1 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #059669;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #059669, #10b981); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">1</div>
+                    <div>
+                        <h3 style="color: #065F46; margin: 0;">🏃‍♂️ Дневная активность и энергия</h3>
+                        <p style="color: #047857; margin: 0; font-size: 0.95rem;">Всё, что нужно знать о вашей физической активности за день</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Это ваша повседневная панель. С первого взгляда вы видите, насколько активно двигались, достигли ли своих целей и сколько калорий сожгли — в покое и во время тренировки.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div>
+                        <h5 style="color: #065F46; margin-bottom: var(--spacing-sm);">Отслеживаемые показатели</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">👟 <strong>Шаги</strong> — дневной итог и прогресс к личной цели</li>
+                            <li style="margin-bottom: 0.5rem;">🔥 <strong>Сожжённые калории</strong> — активные калории и общий расход энергии за день</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Активные минуты</strong> — время в умеренной или интенсивной нагрузке</li>
+                            <li style="margin-bottom: 0.5rem;">📏 <strong>Пройденное расстояние</strong> — в км, пешком или при любой активности</li>
+                            <li style="margin-bottom: 0.5rem;">🏢 <strong>Подъёмы на этажи</strong> — вертикальная нагрузка, которую многие не учитывают</li>
+                            <li style="margin-bottom: 0.5rem;">🪑 <strong>Напоминания о малоподвижности</strong> — мягкие подсказки, если вы долго сидите</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #ECFDF5; border: 1px solid #A7F3D0;">
+                        <h5 style="color: #065F46; margin-bottom: 0.5rem;">Teiker в деле</h5>
+                        <p style="font-style: italic; color: #047857; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Добрый день, Маргарита! Сегодня вы уже сделали 4 200 шагов — это половина вашей дневной цели. Небольшая прогулка после обеда — и вы её выполните.»
+                        </p>
+                        <p style="font-style: italic; color: #047857; font-size: 0.95rem; margin-bottom: 0;">
+                            «Вы сидите уже два часа. Может, встать и немного размяться?»
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПАНЕЛЬ 2 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #0891B2;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #0891B2, #06b6d4); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">2</div>
+                    <div>
+                        <h3 style="color: #164E63; margin: 0;">🚶‍♀️ Анализ мобильности и походки</h3>
+                        <p style="color: #0e7490; margin: 0; font-size: 0.95rem;">Профилактика — замечайте изменения до того, как они станут проблемой</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">То, как вы ходите, многое говорит о вашем здоровье. Эта панель особенно ценна для пожилых людей, тех, кто проходит реабилитацию, и родственников, желающих своевременно узнавать об изменениях в подвижности близкого человека.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div class="glass-card" style="background: #ECFEFF; border: 1px solid #A5F3FC;">
+                        <h5 style="color: #164E63; margin-bottom: 0.5rem;">Teiker в деле</h5>
+                        <p style="font-style: italic; color: #0e7490; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Маргарита, за последние две недели ваша скорость ходьбы немного снизилась, а шаги стали менее равномерными. Стоит упомянуть об этом врачу на следующем приёме.»
+                        </p>
+                        <p style="font-style: italic; color: #0e7490; font-size: 0.95rem; margin-bottom: 0;">
+                            «Сегодня ваш показатель равновесия — 82 из 100. Отлично!»
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: #164E63; margin-bottom: var(--spacing-sm);">Отслеживаемые показатели</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🚶 <strong>Скорость ходьбы</strong> — клинически признанный индикатор общего состояния здоровья пожилых людей</li>
+                            <li style="margin-bottom: 0.5rem;">📐 <strong>Длина и симметрия шага</strong> — выявляет хромоту или неравномерные паттерны ходьбы на ранней стадии</li>
+                            <li style="margin-bottom: 0.5rem;">⚖️ <strong>Показатель равновесия</strong> — рассчитывается на основе данных акселерометра при обычном движении</li>
+                            <li style="margin-bottom: 0.5rem;">🦶 <strong>Каденс</strong> — шагов в минуту; изменения могут предшествовать падению</li>
+                            <li style="margin-bottom: 0.5rem;">⏳ <strong>Время двойной опоры</strong> — как долго обе ноги одновременно касаются земли</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ <strong>Индекс риска падений</strong> — персонализированная оценка, обновляемая ежедневно</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: var(--spacing-lg); background: #F0F9FF; border-radius: var(--radius-md); padding: var(--spacing-md); border: 1px solid #BAE6FD;">
+                    <p style="margin: 0; color: #0369A1; font-size: 0.95rem;"><strong>Кому это особенно нужно:</strong> пожилым людям, живущим самостоятельно; тем, кто восстанавливается после операции на тазобедренном или коленном суставе; людям с историей падений и семьям, которые хотят быть спокойны за близких, не вмешиваясь в их жизнь.</p>
+                </div>
+            </div>
+
+            <!-- ПАНЕЛЬ 3 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #DC2626;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #DC2626, #f87171); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">3</div>
+                    <div>
+                        <h3 style="color: #7F1D1D; margin: 0;">❤️ Жизненные показатели и восстановление</h3>
+                        <p style="color: #991B1B; margin: 0; font-size: 0.95rem;">Как сердце, лёгкие и нервная система реагируют на повседневную жизнь — и как вы восстанавливаетесь ночью</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Эта панель объединяет показатели, раскрывающие ваше внутреннее состояние: насколько напряжена сердечно-сосудистая система, как насыщается кислородом кровь и насколько глубоко вы восстанавливаетесь каждую ночь.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div>
+                        <h5 style="color: #7F1D1D; margin-bottom: var(--spacing-sm);">Сердце и лёгкие</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700); margin-bottom: var(--spacing-md);">
+                            <li style="margin-bottom: 0.5rem;">💓 <strong>ЧСС в покое</strong> — долгосрочная динамика является одним из лучших показателей физической формы</li>
+                            <li style="margin-bottom: 0.5rem;">📊 <strong>Зоны ЧСС</strong> — время в зоне жиросжигания, кардио и максимальной нагрузки</li>
+                            <li style="margin-bottom: 0.5rem;">🫁 <strong>SpO2 (насыщение крови кислородом)</strong> — сигнализирует о низких значениях, требующих медицинского внимания</li>
+                            <li style="margin-bottom: 0.5rem;">🌊 <strong>Вариабельность сердечного ритма (ВСР)</strong> — отражает баланс вегетативной нервной системы и уровень стресса</li>
+                            <li style="margin-bottom: 0.5rem;">💨 <strong>Частота дыхания</strong> — вдохов в минуту; повышенные значения могут рано указывать на заболевание</li>
+                        </ul>
+                        <h5 style="color: #7F1D1D; margin-bottom: var(--spacing-sm);">Сон и восстановление</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🛌 <strong>Фазы сна</strong> — время в фазе БДГ, глубоком, лёгком сне и периоды бодрствования</li>
+                            <li style="margin-bottom: 0.5rem;">⭐ <strong>Оценка сна</strong> — одно число, отражающее качество ночи</li>
+                            <li style="margin-bottom: 0.5rem;">🧘 <strong>Индекс стресса</strong> — определяется по паттернам ВСР в течение дня</li>
+                            <li style="margin-bottom: 0.5rem;">🔋 <strong>«Заряд тела» / оценка восстановления</strong> — насколько вы готовы к предстоящему дню</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #FFF1F2; border: 1px solid #FECDD3;">
+                        <h5 style="color: #7F1D1D; margin-bottom: 0.5rem;">Teiker в деле</h5>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Доброе утро! Ваш пульс в покое сегодня ночью составил 58 уд./мин — это лучший показатель за месяц. И у вас было 1 час 20 минут глубокого сна.»
+                        </p>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Маргарита, ваш SpO2 уже две ночи держится на уровне 93% — немного ниже вашей обычной нормы. Возможно, стоит упомянуть об этом врачу.»
+                        </p>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0;">
+                            «День выдался напряжённым. Хотите, я проведу вас через короткое дыхательное упражнение?»
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top: var(--spacing-lg); background: #FFF5F5; border-radius: var(--radius-md); padding: var(--spacing-md); border: 1px solid #FECACA;">
+                    <p style="margin: 0; color: #7F1D1D; font-size: 0.95rem;"><strong>⚠️ Важно:</strong> Teiker отображает эти данные для вашей информации. Он никогда не интерпретирует их как медицинские диагнозы. Любой показатель, который вас беспокоит, следует всегда обсуждать с врачом или медицинской сестрой.</p>
+                </div>
+            </div>
+
+            <!-- ПАНЕЛЬ 4 -->
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #7C3AED;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #7C3AED, #a78bfa); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">4</div>
+                    <div>
+                        <h3 style="color: #3B0764; margin: 0;">⚖️ Физический профиль и окружающая среда</h3>
+                        <p style="color: #5B21B6; margin: 0; font-size: 0.95rem;">Медленно меняющиеся показатели, дающие долгосрочную картину тела и окружения</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Одни показатели меняются медленно — состав тела, динамика веса, — другие зависят от того, где вы находитесь: температура, влажность, качество воздуха. Эта панель объединяет всё для полной картины.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div class="glass-card" style="background: #FAF5FF; border: 1px solid #DDD6FE;">
+                        <h5 style="color: #3B0764; margin-bottom: 0.5rem;">Teiker в деле</h5>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Маргарита, ваш вес стабилен уже три недели. Так держать!»
+                        </p>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            «Качество воздуха в вашей спальне сейчас немного повышено. Если проветрить комнату несколько минут перед сном, вы будете лучше отдыхать.»
+                        </p>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0;">
+                            «Прошлой ночью температура вашей кожи была чуть выше вашей нормы. Скорее всего, ничего серьёзного, но сегодня обратите внимание на своё самочувствие.»
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: #3B0764; margin-bottom: var(--spacing-sm);">Показатели тела</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700); margin-bottom: var(--spacing-md);">
+                            <li style="margin-bottom: 0.5rem;">⚖️ <strong>Вес и ИМТ</strong> — отслеживается в динамике, чтобы видеть реальные тенденции, а не суточные колебания</li>
+                            <li style="margin-bottom: 0.5rem;">💪 <strong>Состав тела</strong> — процент жира, мышечная масса и гидратация при поддержке устройством</li>
+                            <li style="margin-bottom: 0.5rem;">🌡️ <strong>Температура кожи</strong> — отклонения от нормы могут сигнализировать о болезни или гормональных изменениях</li>
+                        </ul>
+                        <h5 style="color: #3B0764; margin-bottom: var(--spacing-sm);">Датчики окружающей среды</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🌤️ <strong>Температура и влажность воздуха</strong> — от них зависит комфорт и качество сна</li>
+                            <li style="margin-bottom: 0.5rem;">💨 <strong>Индекс качества воздуха</strong> — особенно важен для людей с заболеваниями дыхательных путей</li>
+                            <li style="margin-bottom: 0.5rem;">📡 <strong>Другие периферийные устройства</strong> — умные глюкометры, умные весы и многое другое</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СОВМЕСТИМЫЕ УСТРОЙСТВА -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Работает с устройствами, которые у вас уже есть</h2>
+            <p class="text-center mb-xl" style="color: var(--color-gray-600); max-width: 650px; margin-left: auto; margin-right: auto;">Teiker разработан для интеграции с самыми популярными платформами носимых устройств. Покупать что-то специальное не нужно.</p>
+            <div class="grid-3" style="gap: var(--spacing-md); max-width: 900px; margin: 0 auto;">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">⌚</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Умные часы</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Совместимость с ведущими платформами: Wear OS, Fitbit, Garmin и Apple Watch.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">💪</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Фитнес-браслеты</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Лёгкие браслеты ведущих производителей — отлично подходят для ежедневного мониторинга без полного функционала умных часов.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🩺</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Медицинские устройства</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Умные весы, глюкометры, пульсоксиметры и другие периферийные устройства, важные для контроля здоровья.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-xl">Часто задаваемые вопросы</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">Нужно ли носить устройство 24 часа в сутки?</p>
+                    <p class="faq-answer">Нет. Teiker работает с теми данными, которые фиксирует ваше устройство. Если носить его днём, вы получаете данные об активности и мобильности; если ночью — добавляются показатели сна и восстановления. Чем дольше вы его носите, тем полнее картина, но это не обязательное требование.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Может ли Teiker диагностировать болезни по данным носимого устройства?</p>
+                    <p class="faq-answer">Нет. Teiker не является медицинским прибором и не ставит диагнозов. Он наглядно представляет ваши данные, указывает на изменения или закономерности, которые могут потребовать консультации специалиста, и предупреждает, когда показатель выходит за рамки вашей личной нормы. Любая медицинская интерпретация всегда остаётся в компетенции квалифицированного врача.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Кто имеет доступ к моим данным о здоровье?</p>
+                    <p class="faq-answer">Только вы и те родственники или опекуны, которым вы решите открыть доступ. Все данные шифруются при передаче и хранении. Teiker никогда не продаёт и не передаёт вашу личную медицинскую информацию третьим лицам.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">А если у меня пока нет носимого устройства?</p>
+                    <p class="faq-answer">Teiker отлично работает и без него — функции общения, напоминаний о приёме лекарств и распознавания экстренных ситуаций остаются полностью активными. Подключение носимого устройства просто открывает этот дополнительный уровень контроля за здоровьем, когда вы будете готовы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Данные вашего устройства — наконец-то понятны.</h2>
+            <p style="color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto var(--spacing-xl);">Teiker превращает цифры в понимание — а понимание в более взвешенные решения о здоровье.</p>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.25rem;">Запросить информацию</a>
+                <a href="upravlenie-zdoroviem.html" class="btn btn-outline" style="font-size: 1.1rem; border-color: rgba(255,255,255,0.4); color: white;">Управление здоровьем</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О Teiker</h4>
+                    <p>Проект Teiker родился из реальной потребности заботиться о наших близких, не лишая их независимости.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукт</h4>
+                    <a href="index.html" class="footer-link">Главная</a>
+                    <a href="soprovozhdenie.html" class="footer-link">Сопровождение</a>
+                    <a href="upravlenie-zdoroviem.html" class="footer-link">Здоровье</a>
+                    <a href="analitika-nosimykh-ustroystv.html" class="footer-link">Аналитика носимых</a>
+                    <a href="ekstrennye-situatsii.html" class="footer-link">Экстренные ситуации</a>
+                    <a href="bezopasnost.html" class="footer-link">Безопасность</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <a href="#faq" class="footer-link">Часто задаваемые вопросы</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                    <a href="partnery.html" class="footer-link">Партнёры</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Язык</h4>
+                    <a href="https://www.teiker.online/wearables-insights.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/metricas-de-wearables.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/metricas-de-wearables.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/analyses-wearables.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/analisi-wearable.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/wearable-analysen.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/analitika-nosimykh-ustroystv.html" class="footer-link lang-active">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Teiker. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>

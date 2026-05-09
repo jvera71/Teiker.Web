@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Teiker se integra al 100% con tu smartwatch o pulsera de actividad. Descubre los 4 paneles de salud: actividad diaria, análisis de marcha, signos vitales y perfil físico.">
+    <title>Métricas de Wearables – Tu salud, explicada | Teiker</title>
+    <link rel="preload" href="../index.css" as="style"><link rel="preload" href="../main.js" as="script"><link rel="stylesheet" href="../index.css">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/wearables-insights.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/wearables-insights.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/metricas-de-wearables.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/metricas-de-wearables.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/analyses-wearables.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/analisi-wearable.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/wearable-analysen.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/analitika-nosimykh-ustroystv.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="canonical" href="https://www.teiker.online/es/metricas-de-wearables.html">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menú"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="acompanamiento.html" class="nav-link">Acompañamiento</a></li>
+                    <li><a href="gestion-salud.html" class="nav-link">Gestión Salud</a></li>
+                    <li><a href="emergencias.html" class="nav-link">Emergencias</a></li>
+                    <li><a href="seguridad.html" class="nav-link">Seguridad</a></li>
+                    <li><a href="partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Solicitar información</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0c1a2e 100%);">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1 style="color: white;">Tu cuerpo tiene mucho que contarte.<br>Teiker te lo explica.</h1>
+                <p style="max-width: 860px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.88);">
+                    Teiker se conecta <strong style="color: white;">al 100% con tu smartwatch o pulsera de actividad</strong> y convierte los datos de los sensores en cuatro paneles de salud claros y accionables — para que siempre sepas lo que pasa realmente en tu cuerpo.
+                </p>
+                <div class="grid-4" style="max-width: 960px; margin: var(--spacing-xl) auto; gap: var(--spacing-md);">
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🏃‍♂️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Actividad Diaria<br>y Energía</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">🚶‍♀️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Movilidad<br>y Marcha</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">❤️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Signos Vitales<br>y Recuperación</p>
+                    </div>
+                    <div class="glass-card-dark" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.4rem;">⚖️</div>
+                        <p style="margin: 0; font-size: 0.9rem; color: rgba(255,255,255,0.9); font-weight: 600;">Perfil Físico<br>y Entorno</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#paneles" class="btn btn-primary">Explorar los paneles</a>
+                    <a href="gestion-salud.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">Gestión de Salud</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Lo que capta tu wearable, Teiker te lo explica</h2>
+                <p style="max-width: 750px; margin: 0 auto; color: var(--color-gray-600); font-size: 1.1rem;">
+                    La mayoría de los wearables acumulan datos y te dejan sin saber qué significan. Teiker coge esos datos, les da contexto, detecta tendencias y te avisa — o avisa a tu familia — cuando algo merece atención.
+                </p>
+            </div>
+            <div class="grid-3" style="gap: var(--spacing-md);">
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">📡</div>
+                    <h4 style="color: var(--color-primary-700);">Sincronización automática</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Tu dispositivo se sincroniza en segundo plano. Sin subidas manuales, sin olvidar. Tus datos siempre al día.</p>
+                </div>
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🔍</div>
+                    <h4 style="color: var(--color-primary-700);">Explicaciones en lenguaje claro</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Sin números crípticos. Teiker explica cada métrica en lenguaje cotidiano — qué es, qué significa para ti y a qué debes prestar atención.</p>
+                </div>
+                <div class="feature-card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🔔</div>
+                    <h4 style="color: var(--color-primary-700);">Alertas inteligentes</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.95rem;">Teiker te avisa cuando una lectura se sale de tu línea base personal y puede alertar a familiares o cuidadores si hace falta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANELES -->
+    <section class="section" id="paneles">
+        <div class="container">
+            <h2 class="text-center mb-xl">Cuatro paneles, una imagen completa</h2>
+
+            <!-- PANEL 1 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #059669;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #059669, #10b981); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">1</div>
+                    <div>
+                        <h3 style="color: #065F46; margin: 0;">🏃‍♂️ Actividad Diaria y Energía</h3>
+                        <p style="color: #047857; margin: 0; font-size: 0.95rem;">Todo lo que necesitas saber sobre cuánto te has movido hoy</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Es tu panel del día a día. De un vistazo sabes cuánto te has movido, si has alcanzado tus objetivos y cuántas calorías has quemado — tanto en reposo como durante el ejercicio.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div>
+                        <h5 style="color: #065F46; margin-bottom: var(--spacing-sm);">Métricas incluidas</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">👟 <strong>Pasos</strong> — total diario y progreso hacia tu objetivo personal</li>
+                            <li style="margin-bottom: 0.5rem;">🔥 <strong>Calorías quemadas</strong> — activas frente al gasto total del día</li>
+                            <li style="margin-bottom: 0.5rem;">⏱️ <strong>Minutos activos</strong> — tiempo en movimiento moderado o intenso</li>
+                            <li style="margin-bottom: 0.5rem;">📏 <strong>Distancia recorrida</strong> — en km, a pie o en cualquier actividad</li>
+                            <li style="margin-bottom: 0.5rem;">🏢 <strong>Pisos subidos</strong> — el esfuerzo vertical que mucha gente olvida</li>
+                            <li style="margin-bottom: 0.5rem;">🪑 <strong>Alertas por sedentarismo</strong> — avisos suaves si llevas mucho tiempo sentado</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #ECFDF5; border: 1px solid #A7F3D0;">
+                        <h5 style="color: #065F46; margin-bottom: 0.5rem;">Teiker en acción</h5>
+                        <p style="font-style: italic; color: #047857; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "Buenas tardes, María. Llevas 4.200 pasos — vas por la mitad de tu objetivo. Con un paseo tranquilo después de comer lo consigues sin problema."
+                        </p>
+                        <p style="font-style: italic; color: #047857; font-size: 0.95rem; margin-bottom: 0;">
+                            "Llevas dos horas sentada. ¿Te apetece levantarte cinco minutos a estirar?"
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANEL 2 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #0891B2;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #0891B2, #06b6d4); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">2</div>
+                    <div>
+                        <h3 style="color: #164E63; margin: 0;">🚶‍♀️ Análisis de Movilidad y Marcha</h3>
+                        <p style="color: #0e7490; margin: 0; font-size: 0.95rem;">Salud preventiva — detecta cambios antes de que se conviertan en problemas</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Cómo caminas dice mucho de tu salud. Este panel es especialmente valioso para personas mayores, personas en rehabilitación y familias que quieren una señal de alerta temprana ante cambios en la movilidad.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div class="glass-card" style="background: #ECFEFF; border: 1px solid #A5F3FC;">
+                        <h5 style="color: #164E63; margin-bottom: 0.5rem;">Teiker en acción</h5>
+                        <p style="font-style: italic; color: #0e7490; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "María, en las últimas dos semanas tu velocidad al caminar ha bajado un poco y tus pasos son algo menos regulares. Merece la pena comentárselo a tu médico en la próxima visita."
+                        </p>
+                        <p style="font-style: italic; color: #0e7490; font-size: 0.95rem; margin-bottom: 0;">
+                            "Tu puntuación de equilibrio hoy es 82 sobre 100. ¡Muy bien!"
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: #164E63; margin-bottom: var(--spacing-sm);">Métricas incluidas</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🚶 <strong>Velocidad de marcha</strong> — indicador clínico reconocido de salud en mayores</li>
+                            <li style="margin-bottom: 0.5rem;">📐 <strong>Longitud y simetría de zancada</strong> — detecta cojeras o patrones irregulares</li>
+                            <li style="margin-bottom: 0.5rem;">⚖️ <strong>Puntuación de equilibrio</strong> — calculada a partir del acelerómetro durante el movimiento normal</li>
+                            <li style="margin-bottom: 0.5rem;">🦶 <strong>Cadencia</strong> — pasos por minuto; los cambios pueden anticipar una caída</li>
+                            <li style="margin-bottom: 0.5rem;">⏳ <strong>Tiempo de doble apoyo</strong> — cuánto tiempo tienen los dos pies en el suelo a la vez</li>
+                            <li style="margin-bottom: 0.5rem;">⚠️ <strong>Índice de riesgo de caída</strong> — valoración personalizada actualizada cada día</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: var(--spacing-lg); background: #F0F9FF; border-radius: var(--radius-md); padding: var(--spacing-md); border: 1px solid #BAE6FD;">
+                    <p style="margin: 0; color: #0369A1; font-size: 0.95rem;"><strong>¿A quién beneficia más?</strong> A personas mayores que viven solas, a quienes se recuperan de una operación de cadera o rodilla, a quienes tienen historial de caídas y a las familias que quieren tranquilidad sin ser invasivas.</p>
+                </div>
+            </div>
+
+            <!-- PANEL 3 -->
+            <div class="glass-card mb-xl" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #DC2626;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #DC2626, #f87171); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">3</div>
+                    <div>
+                        <h3 style="color: #7F1D1D; margin: 0;">❤️ Signos Vitales y Recuperación</h3>
+                        <p style="color: #991B1B; margin: 0; font-size: 0.95rem;">Cómo responden tu corazón, pulmones y sistema nervioso — y cómo te recuperas por la noche</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Este panel agrupa las métricas que revelan tu estado interno: cuánto trabaja tu sistema cardiovascular, cómo se oxigena tu sangre y qué tan profunda es tu recuperación cada noche.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div>
+                        <h5 style="color: #7F1D1D; margin-bottom: var(--spacing-sm);">Corazón y pulmones</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700); margin-bottom: var(--spacing-md);">
+                            <li style="margin-bottom: 0.5rem;">💓 <strong>Frecuencia cardíaca en reposo</strong> — su tendencia a largo plazo es uno de los mejores indicadores de forma física</li>
+                            <li style="margin-bottom: 0.5rem;">📊 <strong>Zonas de frecuencia cardíaca</strong> — tiempo en quema de grasa, cardio e intensidad máxima</li>
+                            <li style="margin-bottom: 0.5rem;">🫁 <strong>SpO2 (saturación de oxígeno)</strong> — detecta lecturas bajas que pueden requerir atención médica</li>
+                            <li style="margin-bottom: 0.5rem;">🌊 <strong>Variabilidad de la frecuencia cardíaca (VFC)</strong> — refleja el equilibrio del sistema nervioso autónomo y el estrés</li>
+                            <li style="margin-bottom: 0.5rem;">💨 <strong>Frecuencia respiratoria</strong> — respiraciones por minuto; valores elevados pueden indicar enfermedad de forma precoz</li>
+                        </ul>
+                        <h5 style="color: #7F1D1D; margin-bottom: var(--spacing-sm);">Sueño y recuperación</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🛌 <strong>Fases del sueño</strong> — tiempo en REM, sueño profundo, sueño ligero y despertares</li>
+                            <li style="margin-bottom: 0.5rem;">⭐ <strong>Puntuación de sueño</strong> — un único número que resume la calidad de la noche</li>
+                            <li style="margin-bottom: 0.5rem;">🧘 <strong>Índice de estrés</strong> — detectado a partir de los patrones de VFC a lo largo del día</li>
+                            <li style="margin-bottom: 0.5rem;">🔋 <strong>Batería corporal / puntuación de recuperación</strong> — cuánta energía tienes para el día</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card" style="background: #FFF1F2; border: 1px solid #FECDD3;">
+                        <h5 style="color: #7F1D1D; margin-bottom: 0.5rem;">Teiker en acción</h5>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "¡Buenos días! Tu frecuencia cardíaca en reposo anoche fue de 58 ppm — la mejor lectura del mes. Y tuviste 1 hora y 20 minutos de sueño profundo."
+                        </p>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "María, tu SpO2 ha estado en el 93% las últimas dos noches, un poco por debajo de tu nivel habitual. Podría ser buena idea comentárselo al médico."
+                        </p>
+                        <p style="font-style: italic; color: #991B1B; font-size: 0.95rem; margin-bottom: 0;">
+                            "Llevas una tarde con bastante estrés. ¿Quieres que te guíe en un ejercicio de respiración rápido?"
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top: var(--spacing-lg); background: #FFF5F5; border-radius: var(--radius-md); padding: var(--spacing-md); border: 1px solid #FECACA;">
+                    <p style="margin: 0; color: #7F1D1D; font-size: 0.95rem;"><strong>⚠️ Importante:</strong> Teiker muestra estas lecturas para que estés informado. Nunca las interpreta como diagnósticos médicos. Cualquier lectura que te preocupe debe comentarse siempre con tu médico o enfermero.</p>
+                </div>
+            </div>
+
+            <!-- PANEL 4 -->
+            <div class="glass-card" style="background: white; padding: var(--spacing-2xl); border-left: 6px solid #7C3AED;">
+                <div style="display: flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-lg);">
+                    <div style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #7C3AED, #a78bfa); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0;">4</div>
+                    <div>
+                        <h3 style="color: #3B0764; margin: 0;">⚖️ Perfil Físico y Entorno</h3>
+                        <p style="color: #5B21B6; margin: 0; font-size: 0.95rem;">Las métricas que cambian despacio y dan una visión a largo plazo de tu cuerpo y tu entorno</p>
+                    </div>
+                </div>
+                <p style="color: var(--color-gray-700); margin-bottom: var(--spacing-md); font-size: 1.05rem;">Algunas métricas evolucionan lentamente — composición corporal, tendencia del peso — y otras dependen de dónde estás: temperatura, humedad, calidad del aire. Este panel las reúne para que tengas la imagen completa.</p>
+                <div class="grid-2" style="gap: var(--spacing-lg);">
+                    <div class="glass-card" style="background: #FAF5FF; border: 1px solid #DDD6FE;">
+                        <h5 style="color: #3B0764; margin-bottom: 0.5rem;">Teiker en acción</h5>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "María, tu peso lleva tres semanas estable. ¡Así se hace!"
+                        </p>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0.75rem;">
+                            "La calidad del aire en tu dormitorio está un poco alta ahora mismo. Abrir la ventana unos minutos antes de dormir te ayudaría a descansar mejor."
+                        </p>
+                        <p style="font-style: italic; color: #5B21B6; font-size: 0.95rem; margin-bottom: 0;">
+                            "Tu temperatura cutánea anoche estaba algo por encima de tu media. Probablemente sea nada, pero fíjate en cómo te encuentras hoy."
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: #3B0764; margin-bottom: var(--spacing-sm);">Métricas corporales</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700); margin-bottom: var(--spacing-md);">
+                            <li style="margin-bottom: 0.5rem;">⚖️ <strong>Peso e IMC</strong> — seguimiento en el tiempo para ver tendencias reales, no variaciones del día a día</li>
+                            <li style="margin-bottom: 0.5rem;">💪 <strong>Composición corporal</strong> — porcentaje de grasa, masa muscular e hidratación cuando el dispositivo lo permite</li>
+                            <li style="margin-bottom: 0.5rem;">🌡️ <strong>Temperatura cutánea</strong> — las desviaciones de tu línea base pueden indicar enfermedad o cambios hormonales</li>
+                        </ul>
+                        <h5 style="color: #3B0764; margin-bottom: var(--spacing-sm);">Sensores ambientales</h5>
+                        <ul style="list-style: none; padding: 0; color: var(--color-gray-700);">
+                            <li style="margin-bottom: 0.5rem;">🌤️ <strong>Temperatura y humedad ambiental</strong> — el confort y la calidad del sueño dependen de ellos</li>
+                            <li style="margin-bottom: 0.5rem;">💨 <strong>Índice de calidad del aire</strong> — especialmente relevante para personas con patologías respiratorias</li>
+                            <li style="margin-bottom: 0.5rem;">📡 <strong>Otros sensores periféricos</strong> — glucómetros inteligentes, básculas conectadas y más</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISPOSITIVOS COMPATIBLES -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <h2 class="text-center mb-md">Compatible con los dispositivos que ya tienes</h2>
+            <p class="text-center mb-xl" style="color: var(--color-gray-600); max-width: 650px; margin-left: auto; margin-right: auto;">Teiker está diseñado para integrarse con las plataformas de wearables más populares. No necesitas comprar ningún dispositivo especial.</p>
+            <div class="grid-3" style="gap: var(--spacing-md); max-width: 900px; margin: 0 auto;">
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">⌚</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Smartwatches</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Compatible con las principales plataformas: Wear OS, Fitbit, Garmin y Apple Watch.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">💪</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Pulseras de actividad</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Dispositivos ligeros de las marcas más conocidas — perfectos para el seguimiento diario sin las funciones completas de un smartwatch.</p>
+                </div>
+                <div class="glass-card" style="background: white; padding: var(--spacing-xl); text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">🩺</div>
+                    <h4 style="color: var(--color-primary-700); margin-bottom: 0.5rem;">Dispositivos médicos</h4>
+                    <p style="color: var(--color-gray-600); font-size: 0.9rem;">Básculas inteligentes, glucómetros, oxímetros y otros dispositivos periféricos esenciales para el control de la salud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-xl">Preguntas frecuentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <p class="faq-question">¿Tengo que llevar el dispositivo las 24 horas?</p>
+                    <p class="faq-answer">No. Teiker trabaja con los datos que captura tu dispositivo. Si lo llevas durante el día obtienes datos de actividad y movilidad; si lo llevas por la noche, se añaden las métricas de sueño y recuperación. Cuanto más lo uses, más completa será la imagen — pero no hay ninguna obligación.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Puede Teiker diagnosticar enfermedades a partir de los datos del wearable?</p>
+                    <p class="faq-answer">No. Teiker no es un dispositivo médico y no diagnostica nada. Presenta tus datos de forma clara, señala cambios o patrones que pueden merecer una consulta con un profesional sanitario y te alerta cuando una lectura se sale de tu línea base personal. Cualquier interpretación médica es siempre responsabilidad de un clínico cualificado.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Quién puede ver mis datos de salud?</p>
+                    <p class="faq-answer">Solo tú y los familiares o cuidadores con quienes elijas compartirlos. Todos los datos están cifrados en tránsito y en reposo. Teiker nunca vende ni comparte tu información personal de salud con terceros.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Qué pasa si aún no tengo un wearable?</p>
+                    <p class="faq-answer">Teiker funciona perfectamente sin él — el acompañamiento, los recordatorios de medicación y la detección de emergencias siguen activos al 100%. Añadir un wearable simplemente desbloquea esta capa extra de información de salud cuando estés listo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contacto" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Tus datos del wearable, por fin con sentido.</h2>
+            <p style="color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto var(--spacing-xl);">Teiker convierte números en comprensión — y la comprensión en mejores decisiones de salud.</p>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contacto" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.25rem;">Solicitar información</a>
+                <a href="gestion-salud.html" class="btn btn-outline" style="font-size: 1.1rem; border-color: rgba(255,255,255,0.4); color: white;">Gestión de Salud</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Teiker</h4>
+                    <p>Teiker nació de la necesidad real de cuidar a nuestros mayores sin que pierdan su independencia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Producto</h4>
+                    <a href="index.html" class="footer-link">Inicio</a>
+                    <a href="acompanamiento.html" class="footer-link">Acompañamiento</a>
+                    <a href="gestion-salud.html" class="footer-link">Gestión Salud</a>
+                    <a href="metricas-de-wearables.html" class="footer-link">Métricas de Wearables</a>
+                    <a href="emergencias.html" class="footer-link">Emergencias</a>
+                    <a href="seguridad.html" class="footer-link">Seguridad</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <a href="#faq" class="footer-link">Preguntas frecuentes</a>
+                    <a href="#contacto" class="footer-link">Contacto</a>
+                    <a href="partners.html" class="footer-link">Partners</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Idioma</h4>
+                    <a href="https://www.teiker.online/wearables-insights.html" class="footer-link">English</a>
+                    <a href="https://www.teiker.online/es/metricas-de-wearables.html" class="footer-link lang-active">Español</a>
+                    <a href="https://www.teiker.online/pt/metricas-de-wearables.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/analyses-wearables.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/analisi-wearable.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/wearable-analysen.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/analitika-nosimykh-ustroystv.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js" defer></script>
+</body>
+
+</html>
