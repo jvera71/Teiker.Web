@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore all Teiker features: companionship and conversation, health management, emergency protocols, presence detection and privacy — designed for older adults and their families.">
+    <title>Features – Everything Teiker can do for you | Teiker</title>
+    <link rel="preload" href="index.css" as="style"><link rel="preload" href="main.js" as="script"><link rel="stylesheet" href="index.css">
+    <link rel="canonical" href="https://www.teiker.online/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.teiker.online/features.html">
+    <link rel="alternate" hreflang="en" href="https://www.teiker.online/features.html">
+    <link rel="alternate" hreflang="es" href="https://www.teiker.online/es/funcionalidades.html">
+    <link rel="alternate" hreflang="pt" href="https://www.teiker.online/pt/funcionalidades.html">
+    <link rel="alternate" hreflang="fr" href="https://www.teiker.online/fr/fonctionnalites.html">
+    <link rel="alternate" hreflang="it" href="https://www.teiker.online/it/funzionalita.html">
+    <link rel="alternate" hreflang="de" href="https://www.teiker.online/de/funktionen.html">
+    <link rel="alternate" hreflang="ru" href="https://www.teiker.online/ru/vozmozhnosti.html">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <style>
+        /* ── Feature page-specific styles ── */
+        .module-header {
+            padding: 3rem 0 2.5rem;
+            color: white;
+        }
+        .module-header .container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .module-number {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 900;
+            flex-shrink: 0;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+        .module-meta { flex: 1; }
+        .module-meta h2 {
+            margin: 0 0 0.35rem;
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            color: white;
+        }
+        .module-meta h2::after { display: none; }
+        .module-meta p { margin: 0; font-size: 1.05rem; opacity: 0.88; }
+        .module-badge {
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.18);
+            font-size: 0.875rem;
+            font-weight: 700;
+            white-space: nowrap;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.25rem;
+            padding: 2.5rem 0 3rem;
+        }
+        .feature-tile {
+            background: white;
+            border-radius: var(--radius-lg, 1rem);
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            border-top: 3px solid var(--tile-accent, #7c3aed);
+        }
+        .feature-tile:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .feature-tile-icon {
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .feature-tile-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--color-gray-900, #111);
+            margin: 0;
+        }
+        .feature-tile-desc {
+            font-size: 0.9rem;
+            color: var(--color-gray-600, #4b5563);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Module color themes */
+        .mod-companionship  { background: linear-gradient(135deg, #4c1d95, #6d28d9, #7c3aed); }
+        .mod-health         { background: linear-gradient(135deg, #134e4a, #0d9488, #14b8a6); }
+        .mod-emergencies    { background: linear-gradient(135deg, #7c2d12, #b91c1c, #ef4444); }
+        .mod-privacy        { background: linear-gradient(135deg, #0f172a, #1e293b, #334155); }
+
+        .bg-companionship { background: #f5f3ff; }
+        .bg-health        { background: #f0fdfa; }
+        .bg-emergencies   { background: #fff7f7; }
+        .bg-privacy       { background: #f1f5f9; }
+
+        .accent-companionship { --tile-accent: #7c3aed; }
+        .accent-health        { --tile-accent: #0d9488; }
+        .accent-emergencies   { --tile-accent: #dc2626; }
+        .accent-privacy       { --tile-accent: #334155; }
+
+        /* Module quick-nav */
+        .module-nav {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+        .module-nav-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.6rem 1.25rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: opacity 0.2s, transform 0.2s;
+            color: white;
+        }
+        .module-nav-pill:hover { opacity: 0.85; transform: translateY(-2px); }
+        .pill-companionship { background: #7c3aed; }
+        .pill-health        { background: #0d9488; }
+        .pill-emergencies   { background: #dc2626; }
+        .pill-privacy       { background: #334155; }
+
+        /* Wearable sub-grid */
+        .wearable-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 1rem;
+            margin-top: 1.25rem;
+        }
+        .wearable-tile {
+            background: white;
+            border-radius: var(--radius-md, 0.75rem);
+            padding: 1.25rem;
+            border-left: 4px solid var(--w-accent, #0d9488);
+        }
+        .wearable-tile-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .wearable-tile-title { font-weight: 700; font-size: 0.9rem; color: #134e4a; margin: 0 0 0.3rem; }
+        .wearable-tile-desc { font-size: 0.825rem; color: var(--color-gray-600, #4b5563); margin: 0; line-height: 1.55; }
+
+        /* Protocol steps */
+        .protocol-step {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--radius-md, 0.75rem);
+            margin-bottom: 0.75rem;
+        }
+        .protocol-step-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #dc2626;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .protocol-step-text strong { color: #7c2d12; display: block; margin-bottom: 0.2rem; font-size: 0.9rem; }
+        .protocol-step-text p { margin: 0; font-size: 0.875rem; color: var(--color-gray-600, #4b5563); }
+
+        /* Privacy guarantee strip */
+        .privacy-guarantee {
+            background: white;
+            border-radius: var(--radius-lg, 1rem);
+            padding: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-left: 4px solid #334155;
+            margin-bottom: 1.25rem;
+        }
+        .privacy-guarantee-icon { font-size: 2rem; flex-shrink: 0; }
+        .privacy-guarantee-title { font-weight: 700; font-size: 1.05rem; color: #0f172a; margin: 0 0 0.3rem; }
+        .privacy-guarantee-desc { font-size: 0.9rem; color: var(--color-gray-600, #4b5563); margin: 0; line-height: 1.6; }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .module-header .container { gap: 1rem; }
+            .module-number { width: 48px; height: 48px; font-size: 1.25rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .wearable-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Teiker</a>
+                <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+                <ul class="nav-links">
+                    <li><a href="companionship.html" class="nav-link">Companionship</a></li>
+                    <li><a href="health-management.html" class="nav-link">Health Management</a></li>
+                    <li><a href="emergencies.html" class="nav-link">Emergencies</a></li>
+                    <li><a href="security.html" class="nav-link">Security</a></li>
+                    <li><a href="partners.html" class="nav-link">Partners</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; font-size: 1rem;">Get in touch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #0c1a2e 100%); padding-bottom: 3rem;">
+        <div class="container">
+            <div class="hero-content animate-fade-in-up">
+                <h1 style="font-size: clamp(2rem, 5vw, 3.75rem);">Everything Teiker can do.<br>All in one place.</h1>
+                <p style="max-width: 760px; margin-left: auto; margin-right: auto; font-size: 1.15rem; color: rgba(255,255,255,0.85);">
+                    Teiker is more than a voice assistant. It is a complete care companion for older adults — combining
+                    conversation, health organisation, safety monitoring and absolute privacy in a single device.
+                </p>
+                <!-- Module quick-jump nav -->
+                <nav class="module-nav" aria-label="Jump to module">
+                    <a href="#companionship" class="module-nav-pill pill-companionship">💬 Companionship</a>
+                    <a href="#health" class="module-nav-pill pill-health">💊 Health Management</a>
+                    <a href="#emergencies" class="module-nav-pill pill-emergencies">🚨 Emergencies</a>
+                    <a href="#privacy" class="module-nav-pill pill-privacy">🔐 Privacy</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         MODULE 1 — COMPANIONSHIP
+    ══════════════════════════════════ -->
+    <div id="companionship">
+        <div class="module-header mod-companionship">
+            <div class="container">
+                <div class="module-number">1</div>
+                <div class="module-meta">
+                    <h2>💬 Companionship &amp; Conversation</h2>
+                    <p>Intelligent company designed to combat loneliness through natural, meaningful interaction.</p>
+                </div>
+                <span class="module-badge">8 features</span>
+            </div>
+        </div>
+
+        <div class="bg-companionship">
+            <div class="container">
+                <div class="feature-grid accent-companionship">
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🗣️</div>
+                        <p class="feature-tile-title">Natural Conversation</p>
+                        <p class="feature-tile-desc">No robotic commands or trigger words needed. Teiker holds fluid conversations, handles topic changes and adapts its pace — just like talking to a real person.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🧠</div>
+                        <p class="feature-tile-title">Personalised Memory</p>
+                        <p class="feature-tile-desc">Remembers family names, hobbies, stories and worries. Picks up conversations where they left off and brings up topics your loved one cares about.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">👋</div>
+                        <p class="feature-tile-title">Proactive Interaction</p>
+                        <p class="feature-tile-desc">Teiker starts conversations naturally — a morning greeting, a midday check-in, a gentle reminder — without feeling intrusive or demanding.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🎯</div>
+                        <p class="feature-tile-title">Cognitive Stimulation</p>
+                        <p class="feature-tile-desc">Word games, riddles, trivia and mental exercises keep the mind active and engaged — tailored to the person's interests and current mood.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">📷</div>
+                        <p class="feature-tile-title">Reminiscence Therapy</p>
+                        <p class="feature-tile-desc">Gently encourages talking about life experiences and cherished memories, improving mood, self-esteem and a sense of identity.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">💛</div>
+                        <p class="feature-tile-title">Active Listening &amp; Validation</p>
+                        <p class="feature-tile-desc">Responds with genuine empathy when someone expresses sadness or worry. Does not dismiss feelings — it listens, acknowledges and supports.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">✏️</div>
+                        <p class="feature-tile-title">Custom Assistant Name</p>
+                        <p class="feature-tile-desc">Your loved one chooses what to call their Teiker — and can change it at any time. A small personalisation that builds real connection.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🌅</div>
+                        <p class="feature-tile-title">Daily Routine Structure</p>
+                        <p class="feature-tile-desc">Organises the day around key moments — morning, midday, afternoon and evening — providing a calm rhythm that reduces anxiety and brings reassurance.</p>
+                    </div>
+
+                </div>
+                <div style="text-align: center; padding-bottom: 2.5rem;">
+                    <a href="companionship.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #6d28d9; text-decoration: none; font-size: 0.95rem;">
+                        Learn more about Companionship <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         MODULE 2 — HEALTH MANAGEMENT
+    ══════════════════════════════════ -->
+    <div id="health">
+        <div class="module-header mod-health">
+            <div class="container">
+                <div class="module-number">2</div>
+                <div class="module-meta">
+                    <h2>💊 Health Management</h2>
+                    <p>A personal health organiser — without replacing doctors, nurses or pharmacists.</p>
+                </div>
+                <span class="module-badge">6 features + 4 wearable dashboards</span>
+            </div>
+        </div>
+
+        <div class="bg-health">
+            <div class="container">
+                <div class="feature-grid accent-health">
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">⏰</div>
+                        <p class="feature-tile-title">Medication Reminders</p>
+                        <p class="feature-tile-desc">Punctual dose and schedule reminders with a gentle follow-up if no confirmation is received. Notifies the family if an important dose is missed.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🔍</div>
+                        <p class="feature-tile-title">Visual Pill Identification</p>
+                        <p class="feature-tile-desc">Uses the camera to identify tablets visually — ideal when multiple similar boxes cause confusion or small print is difficult to read.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">📦</div>
+                        <p class="feature-tile-title">Stock Management</p>
+                        <p class="feature-tile-desc">Automatically tracks the medication supply and sends a timely alert — 7 days before running out — so a prescription can be collected in advance.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">📅</div>
+                        <p class="feature-tile-title">Appointment Reminders</p>
+                        <p class="feature-tile-desc">Multi-stage alerts: one week ahead, the day before and on the day itself. Includes what to bring and how to prepare for the consultation.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🩺</div>
+                        <p class="feature-tile-title">Post-Appointment Follow-up</p>
+                        <p class="feature-tile-desc">After each medical visit, Teiker asks how it went and helps update the medication plan if the doctor made any changes to the treatment.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">⌚</div>
+                        <p class="feature-tile-title">Wearable Integration</p>
+                        <p class="feature-tile-desc">Connects to any compatible smartwatch or fitness band. Health data is displayed across four plain-language dashboards — no medical jargon needed.</p>
+                    </div>
+
+                </div>
+
+                <!-- Wearable dashboards sub-section -->
+                <div style="background: #ccfbf1; border-radius: var(--radius-xl, 1.25rem); padding: 1.75rem 1.75rem 2rem; margin-bottom: 2.5rem;">
+                    <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.05rem; color: #134e4a; margin: 0 0 0.35rem;">
+                        ⌚ Four wearable health dashboards
+                    </p>
+                    <p style="font-size: 0.9rem; color: #0f766e; margin: 0 0 1.1rem;">All explained in plain language — no medical jargon.</p>
+                    <div class="wearable-grid">
+                        <div class="wearable-tile" style="--w-accent: #059669;">
+                            <div class="wearable-tile-icon">🏃</div>
+                            <p class="wearable-tile-title">Activity &amp; Energy</p>
+                            <p class="wearable-tile-desc">Daily steps, calories burned, distance covered and personal movement goals.</p>
+                        </div>
+                        <div class="wearable-tile" style="--w-accent: #0891b2;">
+                            <div class="wearable-tile-icon">🚶</div>
+                            <p class="wearable-tile-title">Mobility &amp; Gait</p>
+                            <p class="wearable-tile-desc">Balance analysis, walking speed patterns and fall-risk indicators.</p>
+                        </div>
+                        <div class="wearable-tile" style="--w-accent: #dc2626;">
+                            <div class="wearable-tile-icon">❤️</div>
+                            <p class="wearable-tile-title">Vital Signs &amp; Recovery</p>
+                            <p class="wearable-tile-desc">Heart rate, blood oxygen (SpO2), HRV, sleep quality and stress levels.</p>
+                        </div>
+                        <div class="wearable-tile" style="--w-accent: #7c3aed;">
+                            <div class="wearable-tile-icon">⚖️</div>
+                            <p class="wearable-tile-title">Physical Profile &amp; Environment</p>
+                            <p class="wearable-tile-desc">Body composition, skin temperature, air quality and ambient sensor data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #FEF9C3; border: 1px solid #FDE68A; border-radius: var(--radius-md, 0.75rem); padding: 1rem 1.25rem; margin-bottom: 2.5rem; display: flex; gap: 0.75rem;">
+                    <span style="font-size: 1.25rem;">⚠️</span>
+                    <p style="margin: 0; font-size: 0.875rem; color: #713f12; line-height: 1.6;">
+                        <strong>Teiker is not medical staff.</strong> It helps you organise and remember what your doctor has already prescribed.
+                        It does not diagnose illnesses, prescribe medication or replace any healthcare professional.
+                        Always consult a professional for any health concern.
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding-bottom: 2.5rem;">
+                    <a href="health-management.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #0d9488; text-decoration: none; font-size: 0.95rem;">
+                        Learn more about Health Management <span>→</span>
+                    </a>
+                    <span style="margin: 0 1rem; color: #94a3b8;">|</span>
+                    <a href="wearables-insights.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #0d9488; text-decoration: none; font-size: 0.95rem;">
+                        Explore wearable dashboards <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         MODULE 3 — EMERGENCIES & SECURITY
+    ══════════════════════════════════ -->
+    <div id="emergencies">
+        <div class="module-header mod-emergencies">
+            <div class="container">
+                <div class="module-number">3</div>
+                <div class="module-meta">
+                    <h2>🚨 Emergencies &amp; Security</h2>
+                    <p>Automated 24/7 protection protocols and visitor monitoring for complete peace of mind.</p>
+                </div>
+                <span class="module-badge">6 features</span>
+            </div>
+        </div>
+
+        <div class="bg-emergencies">
+            <div class="container">
+                <div class="feature-grid accent-emergencies">
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🤸</div>
+                        <p class="feature-tile-title">Automatic Fall Detection</p>
+                        <p class="feature-tile-desc">Sensors detect sudden impacts or unusual immobility without requiring the person to press any button — critical when they cannot call for help themselves.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">😰</div>
+                        <p class="feature-tile-title">Distress Detection</p>
+                        <p class="feature-tile-desc">Recognises cries for help, screams or specific distress phrases in real time and immediately triggers the emergency response protocol.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">👁️</div>
+                        <p class="feature-tile-title">Presence Detection</p>
+                        <p class="feature-tile-desc">Recognises familiar faces — carers, family, neighbours — and logs arrival and departure times, building an accurate picture of who visits and when.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🔔</div>
+                        <p class="feature-tile-title">Unknown Visitor Alerts</p>
+                        <p class="feature-tile-desc">Sends an instant notification to the family if an unrecognised face enters the home, enabling a quick response to potential doorstep fraud or intrusion.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">🛡️</div>
+                        <p class="feature-tile-title">Abuse &amp; Fraud Protection</p>
+                        <p class="feature-tile-desc">Monitors interactions with third parties — carers, visitors, phone callers — detecting signs of neglect, mistreatment or financial pressure.</p>
+                    </div>
+
+                    <div class="feature-tile">
+                        <div class="feature-tile-icon">📞</div>
+                        <p class="feature-tile-title">24/7 Response Protocol</p>
+                        <p class="feature-tile-desc">A human operator verifies the situation before acting, then follows an escalating contact chain: the user, the primary family contact, a secondary contact, and emergency services if needed.</p>
+                    </div>
+
+                </div>
+
+                <!-- Response protocol detail -->
+                <div style="background: white; border-radius: var(--radius-xl, 1.25rem); padding: 1.75rem; margin-bottom: 2.5rem; border: 1px solid #fecaca;">
+                    <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.05rem; color: #7c2d12; margin: 0 0 1.25rem;">
+                        🔄 Emergency response — step by step
+                    </p>
+                    <div class="protocol-step">
+                        <div class="protocol-step-num">1</div>
+                        <div class="protocol-step-text">
+                            <strong>Human verification</strong>
+                            <p>A trained operator reviews the situation before any action is taken — preventing false alarms and ensuring the right response.</p>
+                        </div>
+                    </div>
+                    <div class="protocol-step">
+                        <div class="protocol-step-num">2</div>
+                        <div class="protocol-step-text">
+                            <strong>Contact the user</strong>
+                            <p>Teiker checks in with the person directly. If they confirm they are fine, the alert is closed.</p>
+                        </div>
+                    </div>
+                    <div class="protocol-step">
+                        <div class="protocol-step-num">3</div>
+                        <div class="protocol-step-text">
+                            <strong>Contact the family</strong>
+                            <p>If the user cannot be reached, the primary family contact is notified immediately, followed by the secondary contact.</p>
+                        </div>
+                    </div>
+                    <div class="protocol-step" style="margin-bottom: 0;">
+                        <div class="protocol-step-num">4</div>
+                        <div class="protocol-step-text">
+                            <strong>Emergency services</strong>
+                            <p>If no one responds, Teiker alerts the emergency services (112 / 061). A team member stays active until the situation is resolved.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; padding-bottom: 2.5rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="emergencies.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #b91c1c; text-decoration: none; font-size: 0.95rem;">
+                        Learn more about Emergencies <span>→</span>
+                    </a>
+                    <a href="security.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #b91c1c; text-decoration: none; font-size: 0.95rem;">
+                        Learn more about Security <span>→</span>
+                    </a>
+                    <a href="fraud-prevention.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #b91c1c; text-decoration: none; font-size: 0.95rem;">
+                        Fraud Prevention <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         MODULE 4 — PRIVACY & DATA SECURITY
+    ══════════════════════════════════ -->
+    <div id="privacy">
+        <div class="module-header mod-privacy">
+            <div class="container">
+                <div class="module-number">4</div>
+                <div class="module-meta">
+                    <h2>🔐 Privacy &amp; Data Security</h2>
+                    <p>Absolute guarantees. Your data is yours — always.</p>
+                </div>
+                <span class="module-badge">5 guarantees</span>
+            </div>
+        </div>
+
+        <div class="bg-privacy">
+            <div class="container" style="padding-top: 2.5rem; padding-bottom: 3rem;">
+
+                <div class="privacy-guarantee">
+                    <div class="privacy-guarantee-icon">🎙️</div>
+                    <div>
+                        <p class="privacy-guarantee-title">No continuous recordings</p>
+                        <p class="privacy-guarantee-desc">Teiker does not store video or audio recordings. It processes what it hears and sees in real time, retaining only relevant flags — never raw footage or conversation transcripts.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-guarantee">
+                    <div class="privacy-guarantee-icon">🏠</div>
+                    <div>
+                        <p class="privacy-guarantee-title">Local processing</p>
+                        <p class="privacy-guarantee-desc">Most analysis happens directly on the device inside your home — not on external servers. Sensitive data stays within your walls, minimising exposure to third-party infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-guarantee">
+                    <div class="privacy-guarantee-icon">🎛️</div>
+                    <div>
+                        <p class="privacy-guarantee-title">Active consent &amp; instant privacy mode</p>
+                        <p class="privacy-guarantee-desc">Your loved one can request privacy at any time — "Teiker, I'd like some privacy" — and all microphones and sensors switch off immediately. No delay, no questions asked.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-guarantee">
+                    <div class="privacy-guarantee-icon">👁️</div>
+                    <div>
+                        <p class="privacy-guarantee-title">Full transparency</p>
+                        <p class="privacy-guarantee-desc">Everything that is monitored is known to the user. Nothing is shared with or sold to third parties. GDPR compliant. You decide who sees what, at what level of detail, and for how long.</p>
+                    </div>
+                </div>
+
+                <div class="privacy-guarantee">
+                    <div class="privacy-guarantee-icon">🔒</div>
+                    <div>
+                        <p class="privacy-guarantee-title">End-to-end encryption</p>
+                        <p class="privacy-guarantee-desc">All personal and health data is encrypted in transit and at rest. Access is restricted exclusively to authorised family members — and only the ones you choose.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="security.html" style="display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: #334155; text-decoration: none; font-size: 0.95rem;">
+                        Learn more about Security &amp; Privacy <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURE COUNT SUMMARY STRIP -->
+    <section class="section" style="background: #0f172a; padding: 3rem 0;">
+        <div class="container">
+            <p class="text-center" style="color: rgba(255,255,255,0.6); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem;">Teiker at a glance</p>
+            <div class="grid-4" style="gap: 1.5rem; text-align: center;">
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 900; color: #a78bfa; margin-bottom: 0.35rem;">8</div>
+                    <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; margin: 0;">Companionship<br>features</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 900; color: #2dd4bf; margin-bottom: 0.35rem;">10</div>
+                    <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; margin: 0;">Health &amp; wearable<br>features</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 900; color: #f87171; margin-bottom: 0.35rem;">6</div>
+                    <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; margin: 0;">Safety &amp; emergency<br>features</p>
+                </div>
+                <div>
+                    <div style="font-size: 2.5rem; font-weight: 900; color: #94a3b8; margin-bottom: 0.35rem;">5</div>
+                    <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; margin: 0;">Privacy<br>guarantees</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="contact" style="background: var(--gradient-hero); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--spacing-md);">Ready to see Teiker in action?</h2>
+            <h3 style="color: rgba(255,255,255,0.9); font-weight: 400; margin-bottom: var(--spacing-xl);">Talk to an advisor and find the right setup for your loved one.</h3>
+            <div class="hero-cta" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.25rem;">Request information</a>
+                <a href="index.html" class="btn btn-outline" style="font-size: 1.1rem; padding: 1.25rem;">Back to home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Teiker</h4>
+                    <p>Teiker was born from the real need to care for our elders without them losing their independence. We are a team of health, technology and social care professionals dedicated to improving the lives of older people and their families.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="features.html" class="footer-link">Features</a>
+                    <a href="companionship.html" class="footer-link">Companionship</a>
+                    <a href="health-management.html" class="footer-link">Health Management</a>
+                    <a href="emergencies.html" class="footer-link">Emergencies</a>
+                    <a href="security.html" class="footer-link">Security</a>
+                    <a href="fraud-prevention.html" class="footer-link">Fraud Prevention</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#contact" class="footer-link">Contact</a>
+                    <a href="partners.html" class="footer-link">Partners</a>
+                </div>
+                <div class="footer-section">
+                    <h4>🌐 Language</h4>
+                    <a href="https://www.teiker.online/features.html" class="footer-link lang-active">English</a>
+                    <a href="https://www.teiker.online/es/funcionalidades.html" class="footer-link">Español</a>
+                    <a href="https://www.teiker.online/pt/funcionalidades.html" class="footer-link">Português</a>
+                    <a href="https://www.teiker.online/fr/fonctionnalites.html" class="footer-link">Français</a>
+                    <a href="https://www.teiker.online/it/funzionalita.html" class="footer-link">Italiano</a>
+                    <a href="https://www.teiker.online/de/funktionen.html" class="footer-link">Deutsch</a>
+                    <a href="https://www.teiker.online/ru/vozmozhnosti.html" class="footer-link">Русский</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teiker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
